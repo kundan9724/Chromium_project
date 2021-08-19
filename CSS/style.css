@@ -131,7 +131,7 @@ header #secondary-menu .btn:hover{
     font-weight: lighter;
 }
 
-.inner #left-sec #btn-container{
+.btn-container{
     
     width: 95%;
     /* border: 2px solid red; */
@@ -139,7 +139,7 @@ header #secondary-menu .btn:hover{
     justify-content: space-between;
 }
 
-.inner #left-sec #btn-container a{
+.btn-container a{
     border-radius: 3px;
     text-decoration: none;
     width: 48.5%;
@@ -152,22 +152,22 @@ header #secondary-menu .btn:hover{
     transition-duration: 0.2s;
 }
 
-.inner #left-sec #btn-container a:nth-child(1){
+.btn-container a:nth-child(1){
     color: white;
     background-color: #7856FF;
 }
 
-.inner #left-sec #btn-container a:nth-child(1):hover{
+.btn-container a:nth-child(1):hover{
     color: white;
     background-color: #886aff;
 }
 
-.inner #left-sec #btn-container a:nth-child(2){
+.btn-container a:nth-child(2){
     border: 1px solid #7856FF;
     color: #7856FF;
 }
 
-.inner #left-sec #btn-container a:nth-child(2):hover{
+.btn-container a:nth-child(2):hover{
     border: 1px solid #7856FF;
     color: white;
     background-color: #7856FF;
@@ -204,7 +204,7 @@ header #secondary-menu .btn:hover{
 /* Logo Strip */
 #logo-strip{
     width: 100%;
-    height: 300px;
+    height: 305px;
     padding: 71px;
     background: #f6f6f7;
     box-sizing: border-box  ;
@@ -232,5 +232,134 @@ header #secondary-menu .btn:hover{
     width: 7.28%;
 }
 
+
+/* Beautiful section */
+
+#beautiful{
+    /* border: 2px solid red; */
+    padding: 85px;
+    padding-bottom: 0px;
+    height: 880px;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+#beautiful #content {
+    width: 1300px;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+
+#beautiful #content #head-content{
+    /* border: 2px solid red; */
+    margin: 0px auto;
+    margin-bottom: 60px;
+}
+
+#beautiful #content #head-content h3{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: 35px;
+    margin: 0px;
+}
+
+#beautiful #content #mid-content{
+    /* border: 2px solid red; */
+    height: 520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#beautiful #content #mid-content #left-cont{
+    /* border: 2px solid red; */
+    width: 429px;
+    padding: 40px 0px 0px;
+}
+
+#beautiful #content #mid-content #left-cont .box{
+    /* border: 2px solid red; */
+    margin: 25px 0px;
+}
+
+#beautiful #content #mid-content #left-cont .box .strong{
+    font-size: 11.5px;
+    font-weight: 1000;
+    /* letter-spacing: -0.7px; */
+}
+
+#beautiful #content #mid-content #left-cont .box p{
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: gray;
+    /* margin-top: 13px; */
+}
+
+#beautiful #content #mid-content #left-cont .box p a{
+    text-decoration: none;
+    color: rgba(70, 70, 248, 0.87);
+}
+
+#beautiful #content #mid-content #right-cont{
+    /* border: 2px solid red; */
+    margin-top: 14px;
+    width: 132%;
+    height: 76.2%;
+    background-color: #e0e0e0;
+    box-shadow: 0px 10px 30px 0px #c6c6cc;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#beautiful #content #mid-content #right-cont .bar{
+    /* border: 2px solid red; */
+    height: 10px;
+    width: 100%;
+    background-color: #f3f1f1;
+    background-image: url(https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/global/browser-bar.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#beautiful #content #mid-content #right-cont .sidebar{
+    width: 35.7%;
+    height: 97.8%;
+    overflow: hidden;
+}
+
+#beautiful #content #mid-content #right-cont .sidebar img{
+    width: 78.8%;
+    float: left;
+    
+}
+
+#beautiful #content #mid-content #right-cont .gusto{
+    overflow: hidden;
+}
+
+#beautiful #content #mid-content #right-cont .gusto img{
+    width: 70.9%;
+    position: absolute;
+    top: 10px;
+    left: 28.2%;
+    float: right;
+}
+
+#beautiful #content #foot-content{
+    padding-top: 60px;
+}
+
+#beautiful #content #foot-content p{
+    font-size: 18px;
+    color: #111324;
+    padding: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#beautiful #content #foot-content p + .btn-container a{
+    width: 218px;
+    margin: 0% 0% 0% 43.8%;
+}
 
 /* Footer Section */
