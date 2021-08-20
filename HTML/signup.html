@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../CSS/signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="signup">
+      <div id="campaignMonitor">
+        <img
+          src="https://www.coywolf.news/wp-content/uploads/2019/10/campaign-monitor-icon.png"
+          alt=""
+        />
+        <h2>Campaign Monitor</h2>
+      </div>
+      <h1>Sign up for free.</h1>
+      <p>
+        Start sending beautifully designed emails today with our drag-and -drop
+        editor and library of free templates.
+      </p>
+
+      <form action="">
+        <label id="labelName"></label>
+        <input
+          type="text"
+          placeholder="Full name"
+          id="fullName"
+          onclick="labelNameChange(placeholder)"
+        />
+        <label id="companyName"></label>
+        <input
+          type="text"
+          placeholder="Company name"
+          id="companyname"
+          value=""
+          onclick="labelCompanyChange(placeholder)"
+        />
+        <label id="email"></label>
+        <input
+          type="email"
+          placeholder="Email address"
+          onclick="emailLabelChange(placeholder)"
+        />
+        <label id="password"></label>
+        <input
+          type="password"
+          placeholder="Password"
+          onclick="passwordLabelChange(placeholder)"
+        />
+        <button>Create my account</button>
+        <p>
+          To find out more about how we're using theinformation you'are giving
+          us,please review our privacy statement.
+        </p>
+      </form>
+      <p>Already have an account?Log in</p>
+      <p>By signing up, you agree to our Terms of Use and Anti-spam Policy.</p>
+    </div>
+    <script>
+      function labelNameChange(placeholder) {
+        var name = document.getElementById("labelName");
+        name.innerHTML = placeholder + " *";
+      }
+      function labelCompanyChange(placeholder) {
+        // var element = document.getElementById("labelName");
+        // element.parentNode.removeChild(element);
+        // var element = document.getElementById("email");
+        // element.parentNode.removeChild(element);
+        var companyName = document.getElementById("companyName");
+        companyName.innerHTML = placeholder + " *";
+      }
+      function emailLabelChange(placeholder) {
+        // var element = document.getElementById("labelName");
+        // element.parentNode.removeChild(element);
+        // var element = document.getElementById("companyName");
+        // element.parentNode.removeChild(element);
+        var email = document.getElementById("email");
+        email.innerHTML = placeholder + " *";
+      }
+      function passwordLabelChange(placeholder) {
+        var password = document.getElementById("password");
+        password.innerHTML = placeholder + " *";
+      }
+    </script>
+  </body>
+</html>

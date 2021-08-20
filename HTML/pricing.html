@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing</title>
-    <link rel="stylesheet" href="pricing.css" />
+    <link rel="stylesheet" href="../CSS/pricing.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="heading">
@@ -24,5 +28,480 @@
         <p>High volume pricing</p>
       </div>
     </div>
+    <h2 id="contacts">
+      <b>With your list of</b> &nbsp;
+      <input type="text" id="textbox" value="0" />
+      &nbsp;<b>contacts,we've got the right plan for you.</b>
+    </h2>
+    <div class="slider">
+      <input
+        type="range"
+        min="0"
+        max="50000"
+        value="60"
+        class="slider"
+        id="myRange"
+        placeholder="50"
+        ;
+        oninput="updateTextBox(this.value)"
+        ;
+      />
+    </div>
+    <code id="morethan">MORE THAN 50,000 >></code>
+    <div id="pricing">
+      <div id="basic">
+        <h1>Basic</h1>
+        <p>Get started quickly with our core features.</p>
+        <div>
+          <span class="pay">
+            <sup>$</sup><code id="basicamount">9</code>
+            <!-- <input type="text" value="9" id="basicamount" /> -->
+            <sub>/month</sub></span
+          >
+        </div>
+        <button class="signup"><a href="signup.html"> Sign up</a></button>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p><b>Send up to 2,500 emails</b></p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p><b>Customer support via email</b></p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>All core email marketing features</p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Insights analytics suite</p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Link review <button class="new">NEW</button></p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Free image gallery <button class="new">NEW</button></p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+
+          <p>Marketing automation to your list</p>
+        </div>
+      </div>
+
+      <div id="unlimited">
+        <h1>Unlimited</h1>
+        <p>Unlimited emails for the frequent sender.</p>
+        <div>
+          <span class="pay">
+            <sup>$</sup><code id="unlimitedamount">29</code>
+            <sub>/month</sub></span
+          >
+        </div>
+        <button class="signup">
+          <a href="signup.html"> Sign up</a>
+        </button>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p><b>Unlimited emails to your list</b></p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p><b>Priority customer support via email</b></p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>All core email marketing features</p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Insights analytics suite</p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Link review <button class="new">NEW</button></p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Free image gallery <button class="new">NEW</button></p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Unlimited marketing automation to your list</p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Unlimited inbox reviews</p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Time zone sending</p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Unlimited spam testing</p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Countdown timer</p>
+        </div>
+      </div>
+      <div id="premier">
+        <h1>Premier</h1>
+        <p>Advanced segmentation plus premium support</p>
+        <div>
+          <span class="pay">
+            <sup>$</sup><code id="premiumamount"> 149</code
+            ><sub>/month</sub></span
+          >
+        </div>
+        <button class="signup"><a href="signup.html"> Sign up</a></button>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p><b>Unlimited emails to your list</b></p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p><b>Premier phone and email support</b></p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>All core email marketing features .</p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Insights analytics suite</p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Link review <button class="new">NEW</button></p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Free image gallery <button class="new">NEW</button></p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Unlimited markeying automation to your list</p>
+        </div>
+
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Unlimited inbox previews</p>
+        </div>
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Time zone sending</p>
+        </div>
+
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Unlimited spam testing</p>
+        </div>
+
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Countdown timer</p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Pre-built engagement segments</p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Send-time optimization</p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Advanced limk tracking</p>
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/plus.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="tick">
+          <img
+            src="https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/pricing/teal-check2.png"
+            alt=""
+          />
+          <p>Email builder section looking</p>
+        </div>
+      </div>
+    </div>
+    <p>Only sending emails occasionally? You can also pay per campaign.</p>
+    <h1>Frequently Asked Questions</h1>
+    <div id="faq">
+      <div>
+        <p class="faqque">What if I go over my plan’s limits?</p>
+        <p>
+          If you send above your limits or your subscriber list grows, we’ll
+          notify you and you'll have an option to upgrade or pay for the
+          additional emails.
+        </p>
+      </div>
+      <div>
+        <p class="faqque">Can I change my plan?</p>
+        <p>
+          Absolutely. You can switch between our monthly basic, monthly
+          unlimited, or pay-as-you-go plans at any point without penalty.
+        </p>
+      </div>
+      <div>
+        <p class="faqque">Is there an annual plan?</p>
+        <p>
+          While most of our customers sign up for monthly plans, we do offer an
+          annual plan. For more details, please contact our sales team.
+        </p>
+      </div>
+      <div>
+        <p class="faqque">Do you offer a free trial?</p>
+        <p>
+          It’s free to create an account and send a campaign to five
+          subscribers. Send to more than five people when you choose a paid
+          plan.
+        </p>
+      </div>
+      <div>
+        <p class="faqque">
+          What’s the difference between basic and priority support?
+        </p>
+        <p>
+          With priority support, your support requests go to the top of the
+          queue so you’ll get help faster.
+        </p>
+      </div>
+      <div>
+        <p class="faqque">Can I integrate with other software platforms?</p>
+        <p>
+          We have 250+ integrations you can use to connect Campaign Monitor to
+          your other software tools like Salesforce, Wordpress, or Google
+          Analytics. Browse all integrations here.
+        </p>
+      </div>
+      <div>
+        <p class="faqque">What payment types are accepted?</p>
+        <p>
+          We accept most credit cards and, for high-volume senders and larger
+          organizations, we can support invoicing as well.
+        </p>
+      </div>
+      <div>
+        <p class="faqque">What currencies are accepted?</p>
+        <p>
+          The prices above are in USD. However, we can work with you to support
+          additional currencies such as CAD, EUR, GBP, AUD, and NZD.
+        </p>
+      </div>
+      <div>
+        <p class="faqque">Is there a discount for nonprofits?</p>
+        <p>
+          Yes there is! If your company is a nonprofit, we offer a 15% discount.
+          Please contact our sales team to find out more.
+        </p>
+      </div>
+    </div>
+    <div id="skyblue">
+      <h2 id="getup">Get up and running in minutes.</h2>
+      <p>
+        Our powerful, easy-to-use marketing tools can help your business take
+        off.
+      </p>
+      <button><a href="signup.html">Try it for free</a></button>
+    </div>
+    <script>
+      function updateTextBox(val) {
+        document.getElementById("textbox").value = val;
+        // var val1 = document.getElementById("textbox").value;
+        if (val >= 0 && val <= 509) {
+          document.getElementById("basicamount").innerHTML = 9;
+          document.getElementById("unlimitedamount").innerHTML = 29;
+          document.getElementById("premiumamount").innerHTML = 149;
+        } else if (val >= 510 && val <= 2509) {
+          document.getElementById("basicamount").innerHTML = 29;
+          document.getElementById("unlimitedamount").innerHTML = 59;
+        } else if (val >= 2510 && val <= 5009) {
+          document.getElementById("basicamount").innerHTML = 49;
+          document.getElementById("unlimitedamount").innerHTML = 99;
+          document.getElementById("premiumamount").innerHTML = 149;
+        } else if (val >= 5010 && val <= 10009) {
+          document.getElementById("basicamount").innerHTML = 89;
+          document.getElementById("unlimitedamount").innerHTML = 149;
+          document.getElementById("premiumamount").innerHTML = 249;
+        } else if (val >= 10010 && val <= 15009) {
+          document.getElementById("basicamount").innerHTML = 129;
+          document.getElementById("unlimitedamount").innerHTML = 249;
+          document.getElementById("premiumamount").innerHTML = 399;
+        } else if (val >= 15010 && val <= 25009) {
+          document.getElementById("basicamount").innerHTML = 199;
+          document.getElementById("unlimitedamount").innerHTML = 399;
+          document.getElementById("premiumamount").innerHTML = 499;
+        } else {
+          document.getElementById("basicamount").innerHTML = 299;
+          document.getElementById("unlimitedamount").innerHTML = 699;
+          document.getElementById("premiumamount").innerHTML = 989;
+        }
+      }
+      // let input = document.getElementsByClassName("slider");
+      // let textBox = document.querySelector("#textbox");
+      // textBox.innerHTML = input.value;
+      // input.addEventListener(
+      //   "input",
+      //   function () {
+      //     textBox.value = input.value;
+      //   },
+      //   false
+      // );
+    </script>
   </body>
 </html>
