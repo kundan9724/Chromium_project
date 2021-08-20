@@ -467,7 +467,7 @@ header #secondary-menu .btn:hover{
 
 .trns-btn{
     border-radius: 3px;
-    padding: 20.5px 37px; 
+    padding: 20.5px 37px;
     text-decoration: none;
     border: 1px solid white;
     background-color: white;
@@ -500,7 +500,7 @@ header #secondary-menu .btn:hover{
     right: 1.05%;
     background-color: #7856FF;
     box-shadow: 0px 0px 10px 0px rgb(0,0,0,.3);
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     overflow: hidden;
 }
 
@@ -533,5 +533,130 @@ header #secondary-menu .btn:hover{
     color: white;
 }
 
+
+/* Second Last section */
+#sec-last{
+    height: 470px;
+    padding: 80px 100px;
+    padding-bottom: 54px;
+}
+
+#sec-last .stuff{
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+#sec-last .left-stuff{
+    width: 40%;
+    height: 100%;
+    /* border: 2px solid red; */
+    float: left;
+    padding: 45px 80px 0px 32px;
+    box-sizing: border-box;
+}
+
+#sec-last .left-stuff h3{
+    font-size: 35px;
+    letter-spacing: .1px;
+    line-height: 45px;
+    font-weight: bold;
+    margin-bottom: 0px
+}
+
+#sec-last .left-stuff p{
+    margin-top: 10px;
+    font-size: 17.5px;
+    letter-spacing: .38px;
+    line-height: 28px;
+    font-weight: lighter;
+}
+
+#sec-last .right-stuff{
+    margin-right: 65px;
+    width: 40%;
+    /* border: 2px solid red; */
+    float:  right;
+}
+
+#sec-last .right-stuff img{
+    width: 106.3%;
+    /* border: 2px solid red; */
+}
+
+.left-stuff .btn-container a{
+    margin-top: 4px;
+    font-weight: 600;
+    width: 219px;
+    padding: 22px;
+    border: 1px solid #7856FF;
+    color: #7856FF;
+    background-color: white;
+}
+
+.left-stuff .btn-container a:hover{
+    border: 1px solid #7856FF;
+    color: white;
+    background-color: #7856FF;
+}
+
+/* Pics 2 section */
+#sec-last + .pics .back{
+    height: 278px;
+    background-size: cover;
+    border-bottom: none;
+    background: center center no-repeat url(https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/home/girlboss-bg.jpg);
+    background-size: 100%;
+}
+
+#sec-last + .pics .back p{
+    margin-right: 36%;
+}
+
+#sec-last + .pics .back .trns-btn{
+    padding-right: 36px;
+}
+
+
+/* Gradient Section */
+#gradient{
+    margin-top: 72px;
+    background: linear-gradient(to right, #7856FF 0%, #65B9FF 100%);
+    height: 600px;
+}
+
+#gradient #container{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 153px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#gradient #container h3{
+    letter-spacing: 0.25px;
+    line-height: 45px;
+    font-size: 35px;
+    width: 32%;
+    margin: auto;
+}
+
+#gradient #container p{
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    font-size: 17.15px;
+    margin: 37px auto;
+    margin-bottom: 60px;
+    width: 38%;
+}
+
+#gradient #container .trns-btn{
+    padding: 21.5px 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
 
 /* Footer Section */
