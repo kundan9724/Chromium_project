@@ -25,7 +25,6 @@ document.addEventListener('scroll', function (e) {
             doSomething(lastKnownScrollPosition);
             ticking = false;
         });
-
         ticking = true;
     }
 });
