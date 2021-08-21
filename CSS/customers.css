@@ -1,0 +1,998 @@
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+/* Header Section */
+header{
+  background-color: #111324;
+  /* width: 100%; */
+  height: 80px;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+}
+
+/* Navigation Bar */
+#nav-bar{
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 68.5%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo inside the Navigation Bar */
+.cmlogo{
+  padding-left: 2px;
+  padding-top: 3px;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+/* Navigation Menu */
+#nav-menu{
+  height: 100%;
+  width: 45%;
+  display: flex;
+  /* border: 2px solid red; */
+}
+
+/* Secondary Menu */
+#secondary-menu{
+  height: 100%;
+  width: 22%;
+  display: flex;
+  /* border: 2px solid red; */
+}
+
+#secondary-menu > .btn{
+  font-weight: bold;
+  letter-spacing: 0;
+  border-radius: 3px;
+  background: #51CFDB;
+  margin: 20px 0px 0px 10px;
+  padding: 12px 15px;
+  height: 40px;
+  color: #111324;
+  transition: 0.2s;
+}
+
+/* Anchor Tag properties */
+#nav-bar > a{
+  width: 18%;
+}
+
+#nav-bar #nav-menu a,#secondary-menu a{
+  letter-spacing: .115em;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 33px 12px;
+  box-sizing: border-box;    
+  transition: 0.2s;
+}
+
+#secondary-menu a{
+  letter-spacing: .13em;  
+}
+
+/* Hover Effects */
+#nav-bar #nav-menu a:hover,#secondary-menu a:not(.btn):hover{
+  color: #51CFDB;
+}
+
+header #secondary-menu .btn:hover{
+  background: #6ad6e0;
+}
+
+#heading {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+#heading > h1 {
+  font-size: 50px;
+  color: #111324;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 17px;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0 auto 45px;
+  max-width: 650px;
+  width: 90%;
+  text-align: center;
+}
+#heading > button {
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  background: rgb(81, 207, 219);
+  font-family: cursive;
+  font-size: 17px;
+  border: none;
+}
+h4 {
+  /* font-size: 20px;
+  font-family: monospace; */
+  font-family: "Graphik Web", Helvetica, sans-serif;
+  font-size: 1.6em;
+  /* line-height: 1.308em;
+  font-weight: 500; */
+  font-style: normal;
+  /* letter-spacing: 0.038em; */
+  color: #111324;
+  width: 100%;
+  margin: 0 0 5px;
+  padding: 0;
+}
+h2 {
+  font-family: "Graphik Web", Helvetica, sans-serif;
+  font-size: 3.6em;
+  line-height: 1em;
+  font-weight: 500;
+  font-style: normal;
+  color: #111324;
+  width: 100%;
+  margin: 0 auto 14px;
+  padding: 0;
+}
+#content {
+  min-width: 850px;
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  gap: 8%;
+  color: rgb(120, 86, 255);
+  font-size: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: rgb(252, 239, 216);
+  max-width: 1300px;
+  padding: 15px 4% 0;
+}
+
+#nonprofitimages {
+  width: 80%;
+  display: grid;
+  margin: auto;
+  grid-row: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  /* border: 2px solid red; */
+}
+
+#parkrun {
+  background-color: rgba(93, 93, 102, 0.85);
+  grid-area: parkrun;
+  height: 200px;
+}
+#parkrun > img {
+  width: 50%;
+  height: 60%;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+}
+#redcross {
+  background-color: rgba(81, 207, 219, 0.85);
+  grid-area: redcross;
+  height: 200px;
+}
+#redcross > img {
+  width: 50%;
+  height: 60%;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+}
+#ual {
+  background-color: rgba(93, 93, 102, 0.85);
+  grid-area: ual;
+  height: 200px;
+}
+#ual > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+
+#cancerfoundation {
+  background-color: rgba(120, 86, 255, 0.85);
+  grid-area: cancerfoundation;
+  height: 200px;
+}
+#cancerfoundation > img {
+  width: 50%;
+  height: 20%;
+  display: block;
+  margin: auto;
+  margin-top: 25%;
+}
+#nord {
+  background-color: rgba(120, 86, 255, 0.85);
+  grid-area: nord;
+  height: 200px;
+}
+#nord > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#ms {
+  background-color: rgba(81, 207, 219, 0.85);
+  grid-area: ms;
+  height: 200px;
+}
+#ms > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#en {
+  background-color: rgba(120, 86, 255, 0.85);
+  grid-area: en;
+  height: 200px;
+}
+#en > img {
+  width: 50%;
+  height: 60%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#royal {
+  background-color: #5d5d66;
+  grid-area: royal;
+  height: 200px;
+}
+#royal > img {
+  width: 50%;
+  height: 60%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+
+@media screen and (min-width: 850px) {
+  #nonprofitimages {
+    grid-template:
+      "parkrun redcross ual cancerfoundation"
+      "nord ms en royal";
+    height: 420px;
+  }
+  #nonprofitimages > div {
+    width: 250px;
+  }
+  /* #nonnprofitimages > div {
+    height: 280px;
+  } */
+}
+
+#nonprofit {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+#nonprofit > h4 {
+  color: rgb(120, 86, 255);
+}
+#mediaimages {
+  width: 60%;
+  display: grid;
+  margin: auto;
+  grid-row: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+#rolemodels {
+  background: rgb(102, 101, 111);
+  opacity: 0.5;
+  /* grid-area: rolemodels; */
+  height: 200px;
+}
+#rolemodels:hover {
+  opacity: 1;
+}
+#rolemodels > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#onefortyfour {
+  background-color: rgb(101, 94, 98);
+  opacity: 0.5;
+  /* grid-area: onefortyfour; */
+  height: 200px;
+}
+#onefortyfour:hover {
+  opacity: 1;
+}
+#onefortyfour > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#gist {
+  background-color: rgb(87, 192, 202);
+  opacity: 0.5;
+  background-image: url("https://www.campaignmonitor.com/wp-content/uploads/2021/01/Untitled-design-41.jpg");
+  /* grid-area: gist; */
+  height: 200px;
+}
+
+#gist:hover {
+  opacity: 1;
+}
+#gist > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#livingly {
+  background-color: rgb(139, 103, 242);
+  opacity: 0.5;
+  /* grid-area: livingly; */
+  height: 200px;
+}
+#livingly:hover {
+  opacity: 1;
+}
+
+#livingly > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#brew {
+  background-color: rgb(139, 103, 242);
+  opacity: 0.5;
+  /* grid-area: brew; */
+  height: 200px;
+}
+#brew:hover {
+  opacity: 1;
+}
+#brew > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#girl {
+  background-color: rgb(111, 101, 101);
+  opacity: 0.5;
+  /* grid-area: girl; */
+  height: 200px;
+}
+#girl:hover {
+  opacity: 1;
+}
+#girl > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#media {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+#media > h4 {
+  color: rgb(120, 86, 255);
+}
+#retail {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+#retail > h4 {
+  color: rgb(120, 86, 255);
+}
+#retailimages {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 48% 48%;
+  grid-template-columns: 32% 32% 32%;
+  row-gap: 4%;
+  column-gap: 2%;
+  height: 400px;
+}
+#gu {
+  background: rgb(102, 101, 111);
+  opacity: 0.5;
+}
+#gu:hover {
+  opacity: 1;
+}
+#gu > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#curl {
+  background-color: rgb(234, 54, 103);
+  opacity: 0.5;
+}
+#curl:hover {
+  opacity: 1;
+}
+#curl > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#monica {
+  background-color: rgb(122, 93, 237);
+  opacity: 0.5;
+}
+#monica:hover {
+  opacity: 1;
+}
+#monica > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#tgigolf {
+  background-color: rgb(88, 201, 189);
+  opacity: 0.5;
+}
+#tgigolf:hover {
+  opacity: 1;
+}
+#tgigolf > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#winkel {
+  background-color: rgb(88, 201, 189);
+  opacity: 0.5;
+}
+#winkel:hover {
+  opacity: 1;
+}
+#winkel > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#entertainmentimages {
+  width: 80%;
+  display: grid;
+  margin: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 3%;
+  column-gap: 2%;
+  height: 600px;
+}
+#entertainment {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+#entertainment > h4 {
+  color: rgb(120, 86, 255);
+}
+#wonderful {
+  background-color: rgb(214, 32, 82);
+  opacity: 0.5;
+}
+#wonderful:hover {
+  opacity: 1;
+}
+#wonderful > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#sxsw {
+  background-color: rgb(79, 186, 196);
+  opacity: 0.5;
+}
+#sxsw:hover {
+  opacity: 1;
+}
+#sxsw > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#broadway {
+  background-color: rgb(110, 81, 225);
+  opacity: 0.5;
+}
+#broadway:hover {
+  opacity: 1;
+}
+#broadway > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#bfi {
+  background-color: rgb(110, 81, 225);
+  opacity: 0.5;
+}
+#bfi:hover {
+  opacity: 1;
+}
+#bfi > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#sca {
+  background-color: rgb(110, 81, 225);
+  opacity: 0.5;
+}
+#sca:hover {
+  opacity: 1;
+}
+#sca > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#en2 {
+  background-color: rgb(110, 81, 225);
+  opacity: 0.5;
+}
+#en2:hover {
+  opacity: 1;
+}
+#en2 > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#travelimages {
+  width: 80%;
+  display: grid;
+  margin: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 3%;
+  column-gap: 2%;
+  height: 600px;
+}
+#travel {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+#travel > h4 {
+  color: rgb(120, 86, 255);
+}
+#resy {
+  background-color: rgb(88, 195, 206);
+  opacity: 0.5;
+}
+#resy:hover {
+  opacity: 1;
+}
+#resy > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#tgi {
+  background-color: rgb(79, 186, 196);
+  opacity: 0.5;
+}
+#tgi:hover {
+  opacity: 1;
+}
+#tgi > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#drake {
+  background-color: rgb(110, 81, 225);
+  opacity: 0.5;
+}
+#drake:hover {
+  opacity: 1;
+}
+#drake > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#gusto {
+  background-color: rgb(88, 195, 206);
+  opacity: 0.5;
+}
+#gusto:hover {
+  opacity: 1;
+}
+#gusto > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#mad {
+  background-color: rgb(114, 111, 116);
+  opacity: 0.5;
+}
+#mad:hover {
+  opacity: 1;
+}
+#mad > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#bluetent {
+  background-color: rgb(114, 111, 116);
+  opacity: 0.5;
+}
+#bluetent:hover {
+  opacity: 1;
+}
+#bluetent > img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+}
+#started {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+#started > button {
+  width: 40%;
+  height: 40px;
+  background-color: rgb(120, 86, 255);
+  color: white;
+}
+@media screen and (max-width: 850px) {
+  #nonprofitimages {
+    width: 100%;
+
+    grid-template-areas:
+      "parkrun redcross"
+      "ual cancerfoundation"
+      "nord ms"
+      "en royal";
+  }
+  #nonprofitimages > div {
+    /* width: 25%; */
+    margin-left: 0px;
+  }
+  #mediaimages {
+    grid-template-areas:
+      "rolemodels onefortyfour"
+      "gist livingly"
+      "brew girl";
+  }
+  p,
+  h2,
+  h4 {
+    display: block;
+    text-align: left;
+    max-width: 850px;
+    font-size: 1.6em;
+  }
+  h1 {
+    font-size: 4.6em;
+  }
+}
+
+/* Footer Section */
+footer{
+  height: 595px;
+  background-color: #111324;
+  color: white;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.btn-container{
+    
+  width: 95%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container a{
+  border-radius: 3px;
+  text-decoration: none;
+  width: 48.5%;
+  height: 60px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 23px;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
+  color: white;
+  background-color: #7856FF;
+}
+
+.btn-container a:hover{
+  color: white;
+  background-color: #886aff;
+}
+
+/* Top Part of footer with links */
+
+footer .cmlogo{
+  display: inline;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+footer #footer-cont{
+  width: 73.1%;
+  margin: auto;
+}
+
+footer #footer-cont #top-footer{
+  margin-bottom: 219px;
+}
+
+footer #footer-cont #footer-menu{
+  padding: 0%;
+  margin-top: -2px;
+  float: right;
+  width: 682px;
+}
+
+footer #footer-cont #footer-menu ul{
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  float: left;
+  width: 25%;
+}
+
+footer #footer-cont #footer-menu ul li:nth-child(1){
+  margin: 0px 0px 9px 0px;
+}
+
+footer #footer-cont #footer-menu ul li{
+  margin: 0px 0px 7px 0px;
+}
+
+footer #footer-cont #footer-menu ul li a{
+  color: white;
+  font-size: 12px;
+  letter-spacing: .5px;
+  transition: 0.2s ease-in-out;
+}
+
+footer #footer-cont #footer-menu ul li a:hover{
+  opacity: 0.85;
+}
+
+footer #footer-cont #footer-menu ul .heading{
+  letter-spacing: 0px;
+  font-weight: bold;
+  color: #8A8B93;
+}
+
+footer #footer-cont #footer-menu ul .heading:hover{
+  opacity: 1;
+}
+
+
+hr{
+  border: 0px solid #ffffff;
+  border-top: 1px solid #5D5D66;
+  width: 99.7%;
+}
+
+/* Bottom Part of footer with copyright */
+
+footer #bottom-footer{
+  margin-top: 26px;
+  margin-left: 2px;
+}
+
+footer #bottom-footer .btn-container{
+  width: 488px;
+  float: left;
+}
+
+footer #bottom-footer .foot-notes{
+  margin-top: 9.5px;
+  float: right;
+  width: 684px;
+}
+
+footer #bottom-footer .foot-notes a{
+  margin-right: 13.5px;
+}
+
+footer #bottom-footer .foot-notes a svg{
+  transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes a svg:hover{
+  opacity: .85;
+}
+
+footer #bottom-footer .foot-notes .foot-line{
+  float: right;
+  width: 498px;
+  font-size: 11.5px;
+  margin-top: 3px;
+  margin-right: 0px;
+  color: #BEBEC2;
+  letter-spacing: .05px;
+}
+
+footer #bottom-footer .foot-notes .foot-line a{
+  color: #BEBEC2;
+  margin-right: 0px;
+  transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes .foot-line a:hover{
+  opacity: .85;
+}
+
+footer #bottom-footer .foot-notes .foot-line .first-sep {
+  width: 1px;
+  height: 13px;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  background-color: #8A8B93;
+  margin: 0px 5px;
+}
+
+footer #bottom-footer .foot-notes .foot-line .sep {
+  margin-left: 10px;
+}
+
+.last-part{
+  width: 75%;
+  margin: auto;
+  margin-top: 145px;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.last-part span{
+  color: #BEBEC2;
+  font-size: 11.5px;
+  letter-spacing: .18px;
+}
+
+.last-part span a{
+  color: #BEBEC2;
+  transition: 0.2s ease-in-out;
+}
+
+.last-part span a:hover{
+  opacity: 0.85;
+}
+
+footer .logos{
+  /* border: 2px solid red; */
+  width: 74.5%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+footer .logos a{
+  margin: 16px;
+}
+
+footer .logos a img{
+  width: 10%;
+}
+
+footer .logos .one{
+  width: 15.2%;
+}
+
+footer .logos .two{
+  width: 14%;
+}
+
+footer .logos .three{
+  width: 5.8%;
+}
+
+footer .logos .four{
+  width: 7.8%;
+}
+
+footer .logos .five{
+  width: 8%;
+}
+
+footer .logos .six{
+  width: 8%;
+}
+
+footer .logos .seven{
+  width: 6%;
+}
+
+footer .logos .eight{
+  width: 5%;
+}
