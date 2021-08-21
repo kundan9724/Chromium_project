@@ -1,0 +1,206 @@
+/* CSS Reset */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Graphik Web", Helvetica, sans-serif;
+    font-weight: lighter;
+    background: #f9f9fa;
+}
+
+/* Header Section */
+header{
+    /* width: 100%; */
+    height: 70px;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+    color: #8e959c;
+}
+
+/* Navigation Bar */
+#nav-bar{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 53%;
+    margin: 0px auto;
+    align-items: center;
+}
+
+/* Logo inside the Navigation Bar */
+.cmlogo{
+    margin-top: 25px;
+    margin-left: 1px;
+    margin-right: 23px;
+    float: left;
+    /* border: 2px solid red; */
+}
+
+/* Navigation Menu */
+#nav-menu{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    float: left;
+    /* border: 2px solid red; */
+}
+
+/* Secondary Menu */
+#secondary-menu{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    float: right;
+    /* border: 2px solid red; */
+}
+
+#secondary-menu > .btn{
+    font-weight: bold;
+    letter-spacing: 0;
+    border-radius: 3px;
+    margin: 16px 0px 0px 10px;
+    padding: 12px 21px;
+    height: 36px;
+
+    color: #8e959cb2;
+    border: 1px solid #8e959cb2;
+}
+
+/* Anchor Tag properties */
+#nav-bar > a{
+    width: 18%;
+}
+
+#nav-bar #nav-menu a,#secondary-menu a{
+    letter-spacing: .05px;
+    font-size: 11px;
+    text-decoration: none;
+    color: #8e959c;
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 27px 12px;
+    box-sizing: border-box;    
+    transition: 0.2s;
+}
+
+#secondary-menu .btn{
+    transition: 0s;
+}
+
+#secondary-menu a{
+    letter-spacing: .5px;
+    color: #8e959cb2;
+}
+
+/* Hover Effects */
+#nav-bar #nav-menu a:hover,#secondary-menu a:not(.btn):hover{
+    color: black;
+}
+
+#secondary-menu a:not(.btn):hover{
+    color: #7d838a;
+}
+
+header #secondary-menu .btn:hover{
+    background: #78b324;
+    color: white;
+}
+
+
+
+/* Form Section*/
+
+p{
+    
+    color: #18527c;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+    
+    width: 128px;
+
+    margin: 33px auto;
+    margin-top: 132px;
+}
+
+form{
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px rgb(189, 189, 189);
+    background-color: white;
+    height: 481px;
+    width: 428px;
+    margin: auto;
+    margin-right: 754px;
+    box-sizing: border-box;
+    padding: 31.5px 29.5px;
+    padding-right: 36px;
+}
+
+form label{
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+form input:focus-visible{
+    outline: none;
+}
+
+form input{    
+    box-shadow: inset 0 2px 1px 0 #e0e5e9;
+    border: 1px solid #8e959c94;
+    border-radius: 3px;
+    height: 43px;
+    width: 101.55%;
+    transition: all 0s cubic-bezier(.55,.055,.675,.19);
+    margin-top: 5px;
+    margin-bottom: 19px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+form input:focus{
+    border-color: #79d6ff;
+    box-shadow: inset 0 1px 1px transparent, 0 0 2px 0 #26a6df;
+}
+
+form .field{
+    margin-top: 11px;
+}
+
+form button{
+    border: none;
+    border-radius: 3px;
+    margin-top: 21px;
+    margin-bottom: 34.5px;
+    height: 64px;
+    width: 101.6%;
+    cursor: pointer;
+    background-color: #80bb35;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+button:hover{
+    background-color: #72a72f;
+}
+
+button:active {
+    box-shadow: inset 0 3px 7px 1px #5d8924;
+}
+
+button +a{
+    color: #8e9aad;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all .1s cubic-bezier(.55,.055,.675,.19);
+    font-size: 14px;
+    margin-left: 83px;
+}
+
+button+a:focus,button+a:hover {
+    color: #26a6df;
+    text-decoration: underline;
+}
+
