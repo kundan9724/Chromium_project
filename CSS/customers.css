@@ -1,11 +1,104 @@
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+/* Header Section */
+header{
+  background-color: #111324;
+  /* width: 100%; */
+  height: 80px;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+}
+
+/* Navigation Bar */
+#nav-bar{
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 68.5%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo inside the Navigation Bar */
+.cmlogo{
+  padding-left: 2px;
+  padding-top: 3px;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+/* Navigation Menu */
+#nav-menu{
+  height: 100%;
+  width: 45%;
+  display: flex;
+  /* border: 2px solid red; */
+}
+
+/* Secondary Menu */
+#secondary-menu{
+  height: 100%;
+  width: 22%;
+  display: flex;
+  /* border: 2px solid red; */
+}
+
+#secondary-menu > .btn{
+  font-weight: bold;
+  letter-spacing: 0;
+  border-radius: 3px;
+  background: #51CFDB;
+  margin: 20px 0px 0px 10px;
+  padding: 12px 15px;
+  height: 40px;
+  color: #111324;
+  transition: 0.2s;
+}
+
+/* Anchor Tag properties */
+#nav-bar > a{
+  width: 18%;
+}
+
+#nav-bar #nav-menu a,#secondary-menu a{
+  letter-spacing: .115em;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 33px 12px;
+  box-sizing: border-box;    
+  transition: 0.2s;
+}
+
+#secondary-menu a{
+  letter-spacing: .13em;  
+}
+
+/* Hover Effects */
+#nav-bar #nav-menu a:hover,#secondary-menu a:not(.btn):hover{
+  color: #51CFDB;
+}
+
+header #secondary-menu .btn:hover{
+  background: #6ad6e0;
+}
+
 #heading {
   width: 50%;
   margin: auto;
   text-align: center;
 }
-* {
-  font-family: "Recursive", sans-serif;
-}
+
 #heading > h1 {
   font-size: 50px;
   color: #111324;
@@ -661,4 +754,245 @@ h2 {
   h1 {
     font-size: 4.6em;
   }
+}
+
+/* Footer Section */
+footer{
+  height: 595px;
+  background-color: #111324;
+  color: white;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.btn-container{
+    
+  width: 95%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container a{
+  border-radius: 3px;
+  text-decoration: none;
+  width: 48.5%;
+  height: 60px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 23px;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
+  color: white;
+  background-color: #7856FF;
+}
+
+.btn-container a:hover{
+  color: white;
+  background-color: #886aff;
+}
+
+/* Top Part of footer with links */
+
+footer .cmlogo{
+  display: inline;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+footer #footer-cont{
+  width: 73.1%;
+  margin: auto;
+}
+
+footer #footer-cont #top-footer{
+  margin-bottom: 219px;
+}
+
+footer #footer-cont #footer-menu{
+  padding: 0%;
+  margin-top: -2px;
+  float: right;
+  width: 682px;
+}
+
+footer #footer-cont #footer-menu ul{
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  float: left;
+  width: 25%;
+}
+
+footer #footer-cont #footer-menu ul li:nth-child(1){
+  margin: 0px 0px 9px 0px;
+}
+
+footer #footer-cont #footer-menu ul li{
+  margin: 0px 0px 7px 0px;
+}
+
+footer #footer-cont #footer-menu ul li a{
+  color: white;
+  font-size: 12px;
+  letter-spacing: .5px;
+  transition: 0.2s ease-in-out;
+}
+
+footer #footer-cont #footer-menu ul li a:hover{
+  opacity: 0.85;
+}
+
+footer #footer-cont #footer-menu ul .heading{
+  letter-spacing: 0px;
+  font-weight: bold;
+  color: #8A8B93;
+}
+
+footer #footer-cont #footer-menu ul .heading:hover{
+  opacity: 1;
+}
+
+
+hr{
+  border: 0px solid #ffffff;
+  border-top: 1px solid #5D5D66;
+  width: 99.7%;
+}
+
+/* Bottom Part of footer with copyright */
+
+footer #bottom-footer{
+  margin-top: 26px;
+  margin-left: 2px;
+}
+
+footer #bottom-footer .btn-container{
+  width: 488px;
+  float: left;
+}
+
+footer #bottom-footer .foot-notes{
+  margin-top: 9.5px;
+  float: right;
+  width: 684px;
+}
+
+footer #bottom-footer .foot-notes a{
+  margin-right: 13.5px;
+}
+
+footer #bottom-footer .foot-notes a svg{
+  transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes a svg:hover{
+  opacity: .85;
+}
+
+footer #bottom-footer .foot-notes .foot-line{
+  float: right;
+  width: 498px;
+  font-size: 11.5px;
+  margin-top: 3px;
+  margin-right: 0px;
+  color: #BEBEC2;
+  letter-spacing: .05px;
+}
+
+footer #bottom-footer .foot-notes .foot-line a{
+  color: #BEBEC2;
+  margin-right: 0px;
+  transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes .foot-line a:hover{
+  opacity: .85;
+}
+
+footer #bottom-footer .foot-notes .foot-line .first-sep {
+  width: 1px;
+  height: 13px;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  background-color: #8A8B93;
+  margin: 0px 5px;
+}
+
+footer #bottom-footer .foot-notes .foot-line .sep {
+  margin-left: 10px;
+}
+
+.last-part{
+  width: 75%;
+  margin: auto;
+  margin-top: 145px;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.last-part span{
+  color: #BEBEC2;
+  font-size: 11.5px;
+  letter-spacing: .18px;
+}
+
+.last-part span a{
+  color: #BEBEC2;
+  transition: 0.2s ease-in-out;
+}
+
+.last-part span a:hover{
+  opacity: 0.85;
+}
+
+footer .logos{
+  /* border: 2px solid red; */
+  width: 74.5%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+footer .logos a{
+  margin: 16px;
+}
+
+footer .logos a img{
+  width: 10%;
+}
+
+footer .logos .one{
+  width: 15.2%;
+}
+
+footer .logos .two{
+  width: 14%;
+}
+
+footer .logos .three{
+  width: 5.8%;
+}
+
+footer .logos .four{
+  width: 7.8%;
+}
+
+footer .logos .five{
+  width: 8%;
+}
+
+footer .logos .six{
+  width: 8%;
+}
+
+footer .logos .seven{
+  width: 6%;
+}
+
+footer .logos .eight{
+  width: 5%;
 }
