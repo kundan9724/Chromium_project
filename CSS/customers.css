@@ -1,11 +1,105 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+/* Header Section */
+header {
+  background-color: #111324;
+  /* width: 100%; */
+  height: 80px;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+}
+
+/* Navigation Bar */
+#nav-bar {
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 68.5%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo inside the Navigation Bar */
+.cmlogo {
+  padding-left: 2px;
+  padding-top: 3px;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+/* Navigation Menu */
+#nav-menu {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  /* border: 2px solid red; */
+}
+
+/* Secondary Menu */
+#secondary-menu {
+  height: 100%;
+  width: 22%;
+  display: flex;
+  /* border: 2px solid red; */
+}
+
+#secondary-menu > .btn {
+  font-weight: bold;
+  letter-spacing: 0;
+  border-radius: 3px;
+  background: #51cfdb;
+  margin: 20px 0px 0px 10px;
+  padding: 12px 15px;
+  height: 40px;
+  color: #111324;
+  transition: 0.2s;
+}
+
+/* Anchor Tag properties */
+#nav-bar > a {
+  width: 18%;
+}
+
+#nav-bar #nav-menu a,
+#secondary-menu a {
+  letter-spacing: 0.115em;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 33px 12px;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+#secondary-menu a {
+  letter-spacing: 0.13em;
+}
+
+/* Hover Effects */
+#nav-bar #nav-menu a:hover,
+#secondary-menu a:not(.btn):hover {
+  color: #51cfdb;
+}
+
+header #secondary-menu .btn:hover {
+  background: #6ad6e0;
+}
+
 #heading {
   width: 50%;
   margin: auto;
   text-align: center;
 }
-* {
-  font-family: "Recursive", sans-serif;
-}
+
 #heading > h1 {
   font-size: 50px;
   color: #111324;
@@ -67,10 +161,11 @@ h2 {
   font-size: 100%;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  background: rgb(252, 239, 216);
+  top: 10%;
+  background: white;
   max-width: 1300px;
   padding: 15px 4% 0;
+  z-index: 100;
 }
 
 #nonprofitimages {
@@ -83,12 +178,18 @@ h2 {
   column-gap: 20px;
   /* border: 2px solid red; */
 }
-
 #parkrun {
   background-color: rgba(93, 93, 102, 0.85);
   grid-area: parkrun;
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/01/parkrun-bw.jpg);
+  background-size: 100% 100%;
 }
+#parkrun:hover {
+  background-color: rgba(93, 93, 102, 0.85);
+  background-image: unset;
+}
+
 #parkrun > img {
   width: 50%;
   height: 60%;
@@ -97,9 +198,10 @@ h2 {
   margin-top: 10%;
 }
 #redcross {
-  background-color: rgba(81, 207, 219, 0.85);
   grid-area: redcross;
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/01/redcross-bw.jpg);
+  background-size: 100% 100%;
 }
 #redcross > img {
   width: 50%;
@@ -107,11 +209,19 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 10%;
+  opacity: 1;
 }
+#redcross:hover {
+  background-color: rgba(81, 207, 219, 0.85);
+  background-image: unset;
+}
+
 #ual {
-  background-color: rgba(93, 93, 102, 0.85);
   grid-area: ual;
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/12/Salla-Luhtasela-BA-Hons-Ceramic-Design-Central-Saint-Martins.jpg);
+  background-size: 100% 100%;
+  opacity: 0.8;
 }
 #ual > img {
   width: 50%;
@@ -120,11 +230,20 @@ h2 {
   margin: auto;
   margin-top: 20%;
 }
-
+#ual:hover {
+  background-color: rgba(93, 93, 102, 0.85);
+  background-image: unset;
+}
 #cancerfoundation {
-  background-color: rgba(120, 86, 255, 0.85);
   grid-area: cancerfoundation;
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2021/03/walk-4-brain-cancer-cure-brain-cancer-foundation1-scaled.jpg);
+  background-size: 100% 100%;
+  opacity: 0.8;
+}
+#cancerfoundation:hover {
+  background-color: rgba(120, 86, 255, 0.85);
+  background-image: unset;
 }
 #cancerfoundation > img {
   width: 50%;
@@ -137,6 +256,13 @@ h2 {
   background-color: rgba(120, 86, 255, 0.85);
   grid-area: nord;
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/02/KJ4_2471-2.jpg);
+  background-size: 100% 100%;
+  opacity: 0.8;
+}
+#nord:hover {
+  background-color: rgba(120, 86, 255, 0.85);
+  background-image: unset;
 }
 #nord > img {
   width: 50%;
@@ -146,9 +272,16 @@ h2 {
   margin-top: 20%;
 }
 #ms {
-  background-color: rgba(81, 207, 219, 0.85);
   grid-area: ms;
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2021/02/Screen-Shot-2021-02-15-at-2.48.00-PM.jpg);
+  background-color: rgba(81, 207, 219, 0.85);
+  background-size: 100% 100%;
+  opacity: 0.8;
+}
+#ms:hover {
+  background-color: rgba(81, 207, 219, 0.85);
+  background-image: unset;
 }
 #ms > img {
   width: 50%;
@@ -158,9 +291,15 @@ h2 {
   margin-top: 20%;
 }
 #en {
-  background-color: rgba(120, 86, 255, 0.85);
   grid-area: en;
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/ENO-Aida-Latonia-Moore-3-c-Tristram-Kenton-1.jpg);
+
+  background-size: 100% 100%;
+}
+#en:hover {
+  background-color: rgba(120, 86, 255, 0.85);
+  background-image: unset;
 }
 #en > img {
   width: 50%;
@@ -170,9 +309,14 @@ h2 {
   margin-top: 20%;
 }
 #royal {
-  background-color: #5d5d66;
   grid-area: royal;
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/01/rchf-bw.jpg);
+  background-size: 100% 100%;
+}
+#royal:hover {
+  background-color: #5d5d66;
+  background-image: unset;
 }
 #royal > img {
   width: 50%;
@@ -203,6 +347,12 @@ h2 {
   text-align: center;
   margin-top: 60px;
 }
+#nonprofit > h2 {
+  font-size: 2.6em;
+}
+#nonprofit > p {
+  font-size: 0.9em;
+}
 #nonprofit > h4 {
   color: rgb(120, 86, 255);
 }
@@ -216,13 +366,14 @@ h2 {
   column-gap: 20px;
 }
 #rolemodels {
-  background: rgb(102, 101, 111);
-  opacity: 0.5;
   /* grid-area: rolemodels; */
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/07/Pic-1-1.jpg);
+  background-size: 100% 100%;
 }
 #rolemodels:hover {
-  opacity: 1;
+  background: rgb(102, 101, 111);
+  background-image: unset;
 }
 #rolemodels > img {
   width: 50%;
@@ -232,13 +383,15 @@ h2 {
   margin-top: 20%;
 }
 #onefortyfour {
-  background-color: rgb(101, 94, 98);
-  opacity: 0.5;
   /* grid-area: onefortyfour; */
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/09/paul-hanaoka-HbyYFFokvm0-unsplash.jpg);
+  background-size: 100% 100%;
 }
 #onefortyfour:hover {
   opacity: 1;
+  background-color: rgb(101, 94, 98);
+  background-image: unset;
 }
 #onefortyfour > img {
   width: 50%;
@@ -248,31 +401,37 @@ h2 {
   margin-top: 20%;
 }
 #gist {
-  background-color: rgb(87, 192, 202);
-  opacity: 0.5;
+  opacity: 0.9;
   background-image: url("https://www.campaignmonitor.com/wp-content/uploads/2021/01/Untitled-design-41.jpg");
   /* grid-area: gist; */
   height: 200px;
+  background-size: 100% 100%;
 }
 
 #gist:hover {
   opacity: 1;
+  background-color: rgb(87, 192, 202);
+  background-image: unset;
 }
 #gist > img {
   width: 50%;
-  height: 40%;
+  height: 60%;
   display: block;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 18%;
+  color: teal;
 }
 #livingly {
-  background-color: rgb(139, 103, 242);
-  opacity: 0.5;
+  opacity: 0.8;
   /* grid-area: livingly; */
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/bruno-gomiero-jp7J14W9sSg-unsplash.jpg);
+  background-size: 100% 100%;
 }
 #livingly:hover {
   opacity: 1;
+  background-color: rgb(139, 103, 242);
+  background-image: unset;
 }
 
 #livingly > img {
@@ -284,12 +443,16 @@ h2 {
 }
 #brew {
   background-color: rgb(139, 103, 242);
-  opacity: 0.5;
+  opacity: 0.8;
   /* grid-area: brew; */
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2018/05/tile-bw.jpg);
+  background-size: 100% 100%;
 }
 #brew:hover {
   opacity: 1;
+  background-color: rgb(139, 103, 242);
+  background-image: unset;
 }
 #brew > img {
   width: 50%;
@@ -299,13 +462,15 @@ h2 {
   margin-top: 20%;
 }
 #girl {
-  background-color: rgb(111, 101, 101);
-  opacity: 0.5;
   /* grid-area: girl; */
   height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/OfficeTour-scaled.jpg);
+  background-size: 100% 100%;
 }
 #girl:hover {
   opacity: 1;
+  background-color: rgb(111, 101, 101);
+  background-image: unset;
 }
 #girl > img {
   width: 50%;
@@ -343,12 +508,15 @@ h2 {
   height: 400px;
 }
 #gu {
-  background: rgb(102, 101, 111);
-  opacity: 0.5;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/06/on-bw.jpg);
+  background-size: 100% 100%;
 }
 #gu:hover {
   opacity: 1;
+  background-color: rgb(111, 101, 101);
+  background-image: unset;
 }
+
 #gu > img {
   width: 50%;
   height: 40%;
@@ -357,11 +525,14 @@ h2 {
   margin-top: 20%;
 }
 #curl {
-  background-color: rgb(234, 54, 103);
   opacity: 0.5;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/06/ripcurl-bw.jpg);
+  background-size: 100% 100%;
 }
 #curl:hover {
   opacity: 1;
+  background-color: rgb(234, 54, 103);
+  background-image: unset;
 }
 #curl > img {
   width: 50%;
@@ -371,11 +542,14 @@ h2 {
   margin-top: 20%;
 }
 #monica {
-  background-color: rgb(122, 93, 237);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/06/monicavinader-bw.jpg);
+  background-size: 100% 100%;
 }
 #monica:hover {
   opacity: 1;
+  background-color: rgb(122, 93, 237);
+  background-image: unset;
 }
 #monica > img {
   width: 50%;
@@ -385,12 +559,15 @@ h2 {
   margin-top: 20%;
 }
 #tgigolf {
-  background-color: rgb(88, 201, 189);
-  opacity: 0.5;
+  opacity: 0.7;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/08/tgi-golf-background.jpg);
+  background-size: 100% 100%;
 }
 #tgigolf:hover {
   opacity: 1;
+  background-color: rgb(88, 201, 189);
 }
+
 #tgigolf > img {
   width: 50%;
   height: 40%;
@@ -400,11 +577,16 @@ h2 {
 }
 #winkel {
   background-color: rgb(88, 201, 189);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/07/winkelstraat-background.jpg);
+  background-size: 100% 100%;
 }
 #winkel:hover {
   opacity: 1;
+  background-color: rgb(88, 201, 189);
+  background-image: unset;
 }
+
 #winkel > img {
   width: 50%;
   height: 40%;
@@ -432,11 +614,14 @@ h2 {
   color: rgb(120, 86, 255);
 }
 #wonderful {
-  background-color: rgb(214, 32, 82);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/05/wonderfulunion-bw.jpg);
+  background-size: 100% 100%;
 }
 #wonderful:hover {
   opacity: 1;
+  background-color: rgb(214, 32, 82);
+  background-image: unset;
 }
 #wonderful > img {
   width: 50%;
@@ -446,25 +631,31 @@ h2 {
   margin-top: 20%;
 }
 #sxsw {
-  background-color: rgb(79, 186, 196);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/05/sxsw-bw.jpg);
+  background-size: 100% 100%;
 }
 #sxsw:hover {
   opacity: 1;
+  background-color: rgb(79, 186, 196);
+  background-image: unset;
 }
 #sxsw > img {
-  width: 50%;
-  height: 40%;
+  width: 40%;
+  height: 30%;
   display: block;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 25%;
 }
 #broadway {
-  background-color: rgb(110, 81, 225);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/05/broadway-bw.jpg);
+  background-size: 100% 100%;
 }
 #broadway:hover {
   opacity: 1;
+  background-color: rgb(110, 81, 225);
+  background-image: unset;
 }
 #broadway > img {
   width: 50%;
@@ -475,10 +666,14 @@ h2 {
 }
 #bfi {
   background-color: rgb(110, 81, 225);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/noom-peerapong-2uwFEAGUm6E-unsplash.jpg);
+  background-size: 100% 100%;
 }
 #bfi:hover {
   opacity: 1;
+  background-color: rgb(110, 81, 225);
+  background-image: unset;
 }
 #bfi > img {
   width: 50%;
@@ -489,10 +684,14 @@ h2 {
 }
 #sca {
   background-color: rgb(110, 81, 225);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/denisse-leon-n4BDkIEls78-unsplash.jpg);
+  background-size: 100% 100%;
 }
 #sca:hover {
   opacity: 1;
+  background-color: rgb(110, 81, 225);
+  background-image: unset;
 }
 #sca > img {
   width: 50%;
@@ -503,10 +702,14 @@ h2 {
 }
 #en2 {
   background-color: rgb(110, 81, 225);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/ENO-Aida-Latonia-Moore-3-c-Tristram-Kenton-1.jpg);
+  background-size: 100% 100%;
 }
 #en2:hover {
   opacity: 1;
+  background-color: rgb(110, 81, 225);
+  background-image: unset;
 }
 #en2 > img {
   width: 50%;
@@ -535,11 +738,14 @@ h2 {
   color: rgb(120, 86, 255);
 }
 #resy {
-  background-color: rgb(88, 195, 206);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/11/resy-bw.jpg);
+  background-size: 100% 100%;
 }
 #resy:hover {
   opacity: 1;
+  background-color: rgb(88, 195, 206);
+  background-image: unset;
 }
 #resy > img {
   width: 50%;
@@ -550,10 +756,14 @@ h2 {
 }
 #tgi {
   background-color: rgb(79, 186, 196);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/08/tgi-golf-background.jpg);
+  background-size: 100% 100%;
 }
 #tgi:hover {
   opacity: 1;
+  background-color: rgb(88, 195, 206);
+  background-image: unset;
 }
 #tgi > img {
   width: 50%;
@@ -563,11 +773,14 @@ h2 {
   margin-top: 20%;
 }
 #drake {
-  background-color: rgb(110, 81, 225);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/11/drakehotel-bw.jpg);
+  background-size: 100% 100%;
 }
 #drake:hover {
   opacity: 1;
+  background-color: rgb(110, 81, 225);
+  background-image: unset;
 }
 #drake > img {
   width: 50%;
@@ -577,11 +790,14 @@ h2 {
   margin-top: 20%;
 }
 #gusto {
-  background-color: rgb(88, 195, 206);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/11/P10493-Gusto-107-Final-Web-Use-JPG-1.jpg);
+  background-size: 100% 100%;
 }
 #gusto:hover {
   opacity: 1;
+  background-color: rgb(88, 195, 206);
+  background-image: unset;
 }
 #gusto > img {
   width: 50%;
@@ -591,11 +807,14 @@ h2 {
   margin-top: 20%;
 }
 #mad {
-  background-color: rgb(114, 111, 116);
-  opacity: 0.5;
+  opacity: 0.8;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/04/madpaws-marketing-with-campaign-monitor.jpg);
+  background-size: 100% 100%;
 }
 #mad:hover {
   opacity: 1;
+  background-color: rgb(114, 111, 116);
+  background-image: unset;
 }
 #mad > img {
   width: 50%;
@@ -605,19 +824,22 @@ h2 {
   margin-top: 20%;
 }
 #bluetent {
-  background-color: rgb(114, 111, 116);
-  opacity: 0.5;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/11/benjamin-voros-jv15x2Gs5F8-unsplash.jpg);
+  background-size: 100% 100%;
 }
 #bluetent:hover {
   opacity: 1;
+  background-color: rgb(114, 111, 116);
+  background-image: unset;
 }
 #bluetent > img {
-  width: 50%;
-  height: 40%;
+  width: 30%;
+  height: 20%;
   display: block;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 40%;
 }
+
 #started {
   width: 80%;
   margin: auto;
@@ -661,4 +883,243 @@ h2 {
   h1 {
     font-size: 4.6em;
   }
+}
+
+/* Footer Section */
+footer {
+  height: 595px;
+  background-color: #111324;
+  color: white;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.btn-container {
+  width: 95%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container a {
+  border-radius: 3px;
+  text-decoration: none;
+  width: 48.5%;
+  height: 60px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 23px;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
+  color: white;
+  background-color: #7856ff;
+}
+
+.btn-container a:hover {
+  color: white;
+  background-color: #886aff;
+}
+
+/* Top Part of footer with links */
+
+footer .cmlogo {
+  display: inline;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer #footer-cont {
+  width: 73.1%;
+  margin: auto;
+}
+
+footer #footer-cont #top-footer {
+  margin-bottom: 219px;
+}
+
+footer #footer-cont #footer-menu {
+  padding: 0%;
+  margin-top: -2px;
+  float: right;
+  width: 682px;
+}
+
+footer #footer-cont #footer-menu ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  float: left;
+  width: 25%;
+}
+
+footer #footer-cont #footer-menu ul li:nth-child(1) {
+  margin: 0px 0px 9px 0px;
+}
+
+footer #footer-cont #footer-menu ul li {
+  margin: 0px 0px 7px 0px;
+}
+
+footer #footer-cont #footer-menu ul li a {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease-in-out;
+}
+
+footer #footer-cont #footer-menu ul li a:hover {
+  opacity: 0.85;
+}
+
+footer #footer-cont #footer-menu ul .heading {
+  letter-spacing: 0px;
+  font-weight: bold;
+  color: #8a8b93;
+}
+
+footer #footer-cont #footer-menu ul .heading:hover {
+  opacity: 1;
+}
+
+hr {
+  border: 0px solid #ffffff;
+  border-top: 1px solid #5d5d66;
+  width: 99.7%;
+}
+
+/* Bottom Part of footer with copyright */
+
+footer #bottom-footer {
+  margin-top: 26px;
+  margin-left: 2px;
+}
+
+footer #bottom-footer .btn-container {
+  width: 488px;
+  float: left;
+}
+
+footer #bottom-footer .foot-notes {
+  margin-top: 9.5px;
+  float: right;
+  width: 684px;
+}
+
+footer #bottom-footer .foot-notes a {
+  margin-right: 13.5px;
+}
+
+footer #bottom-footer .foot-notes a svg {
+  transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes a svg:hover {
+  opacity: 0.85;
+}
+
+footer #bottom-footer .foot-notes .foot-line {
+  float: right;
+  width: 498px;
+  font-size: 11.5px;
+  margin-top: 3px;
+  margin-right: 0px;
+  color: #bebec2;
+  letter-spacing: 0.05px;
+}
+
+footer #bottom-footer .foot-notes .foot-line a {
+  color: #bebec2;
+  margin-right: 0px;
+  transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes .foot-line a:hover {
+  opacity: 0.85;
+}
+
+footer #bottom-footer .foot-notes .foot-line .first-sep {
+  width: 1px;
+  height: 13px;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  background-color: #8a8b93;
+  margin: 0px 5px;
+}
+
+footer #bottom-footer .foot-notes .foot-line .sep {
+  margin-left: 10px;
+}
+
+.last-part {
+  width: 75%;
+  margin: auto;
+  margin-top: 145px;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.last-part span {
+  color: #bebec2;
+  font-size: 11.5px;
+  letter-spacing: 0.18px;
+}
+
+.last-part span a {
+  color: #bebec2;
+  transition: 0.2s ease-in-out;
+}
+
+.last-part span a:hover {
+  opacity: 0.85;
+}
+
+footer .logos {
+  /* border: 2px solid red; */
+  width: 74.5%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+footer .logos a {
+  margin: 16px;
+}
+
+footer .logos a img {
+  width: 10%;
+}
+
+footer .logos .one {
+  width: 15.2%;
+}
+
+footer .logos .two {
+  width: 14%;
+}
+
+footer .logos .three {
+  width: 5.8%;
+}
+
+footer .logos .four {
+  width: 7.8%;
+}
+
+footer .logos .five {
+  width: 8%;
+}
+
+footer .logos .six {
+  width: 8%;
+}
+
+footer .logos .seven {
+  width: 6%;
+}
+
+footer .logos .eight {
+  width: 5%;
 }

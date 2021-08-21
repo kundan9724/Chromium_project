@@ -28,7 +28,7 @@ header{
 }
 
 /* Logo inside the Navigation Bar */
-#cmlogo{
+.cmlogo{
     padding-left: 2px;
     padding-top: 3px;
     width: 100%;
@@ -467,7 +467,7 @@ header #secondary-menu .btn:hover{
 
 .trns-btn{
     border-radius: 3px;
-    padding: 20.5px 37px; 
+    padding: 20.5px 37px;
     text-decoration: none;
     border: 1px solid white;
     background-color: white;
@@ -500,7 +500,7 @@ header #secondary-menu .btn:hover{
     right: 1.05%;
     background-color: #7856FF;
     box-shadow: 0px 0px 10px 0px rgb(0,0,0,.3);
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     overflow: hidden;
 }
 
@@ -534,4 +534,341 @@ header #secondary-menu .btn:hover{
 }
 
 
+/* Second Last section */
+#sec-last{
+    height: 470px;
+    padding: 80px 100px;
+    padding-bottom: 54px;
+}
+
+#sec-last .stuff{
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+#sec-last .left-stuff{
+    width: 40%;
+    height: 100%;
+    /* border: 2px solid red; */
+    float: left;
+    padding: 45px 80px 0px 32px;
+    box-sizing: border-box;
+}
+
+#sec-last .left-stuff h3{
+    font-size: 35px;
+    letter-spacing: .1px;
+    line-height: 45px;
+    font-weight: bold;
+    margin-bottom: 0px
+}
+
+#sec-last .left-stuff p{
+    margin-top: 10px;
+    font-size: 17.5px;
+    letter-spacing: .38px;
+    line-height: 28px;
+    font-weight: lighter;
+}
+
+#sec-last .right-stuff{
+    margin-right: 65px;
+    width: 40%;
+    /* border: 2px solid red; */
+    float:  right;
+}
+
+#sec-last .right-stuff img{
+    width: 106.3%;
+    /* border: 2px solid red; */
+}
+
+.left-stuff .btn-container a{
+    margin-top: 4px;
+    font-weight: 600;
+    width: 219px;
+    padding: 22px;
+    border: 1px solid #7856FF;
+    color: #7856FF;
+    background-color: white;
+}
+
+.left-stuff .btn-container a:hover{
+    border: 1px solid #7856FF;
+    color: white;
+    background-color: #7856FF;
+}
+
+/* Pics 2 section */
+#sec-last + .pics .back{
+    height: 278px;
+    background-size: cover;
+    border-bottom: none;
+    background: center center no-repeat url(https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/home/girlboss-bg.jpg);
+    background-size: 100%;
+}
+
+#sec-last + .pics .back p{
+    margin-right: 36%;
+}
+
+#sec-last + .pics .back .trns-btn{
+    padding-right: 36px;
+}
+
+
+/* Gradient Section */
+#gradient{
+    margin-top: 72px;
+    background: linear-gradient(to right, #7856FF 0%, #65B9FF 100%);
+    height: 586px;
+}
+
+#gradient #container{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 153px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#gradient #container h3{
+    letter-spacing: 0.25px;
+    line-height: 45px;
+    font-size: 35px;
+    width: 32%;
+    margin: auto;
+}
+
+#gradient #container p{
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    font-size: 17.15px;
+    margin: 37px auto;
+    margin-bottom: 60px;
+    width: 38%;
+}
+
+#gradient #container .trns-btn{
+    padding: 21.5px 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
 /* Footer Section */
+footer{
+    height: 595px;
+    background-color: #111324;
+    color: white;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+/* Top Part of footer with links */
+
+footer .cmlogo{
+    display: inline;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer #footer-cont{
+    width: 73.1%;
+    margin: auto;
+}
+
+footer #footer-cont #top-footer{
+    margin-bottom: 219px;
+}
+
+footer #footer-cont #footer-menu{
+    padding: 0%;
+    margin-top: -2px;
+    float: right;
+    width: 682px;
+}
+
+footer #footer-cont #footer-menu ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    float: left;
+    width: 25%;
+}
+
+footer #footer-cont #footer-menu ul li:nth-child(1){
+    margin: 0px 0px 9px 0px;
+}
+
+footer #footer-cont #footer-menu ul li{
+    margin: 0px 0px 7px 0px;
+}
+
+footer #footer-cont #footer-menu ul li a{
+    color: white;
+    font-size: 12px;
+    letter-spacing: .5px;
+    transition: 0.2s ease-in-out;
+}
+
+footer #footer-cont #footer-menu ul li a:hover{
+    opacity: 0.85;
+}
+
+footer #footer-cont #footer-menu ul .heading{
+    letter-spacing: 0px;
+    font-weight: bold;
+    color: #8A8B93;
+}
+
+footer #footer-cont #footer-menu ul .heading:hover{
+    opacity: 1;
+}
+
+
+hr{
+    border: 0px solid #ffffff;
+    border-top: 1px solid #5D5D66;
+    width: 99.7%;
+}
+
+/* Bottom Part of footer with copyright */
+
+footer #bottom-footer{
+    margin-top: 26px;
+    margin-left: 2px;
+}
+
+footer #bottom-footer .btn-container{
+    width: 488px;
+    float: left;
+}
+
+footer #bottom-footer .foot-notes{
+    margin-top: 9.5px;
+    float: right;
+    width: 684px;
+}
+
+footer #bottom-footer .foot-notes a{
+    margin-right: 13.5px;
+}
+
+footer #bottom-footer .foot-notes a svg{
+    transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes a svg:hover{
+    opacity: .85;
+}
+
+footer #bottom-footer .foot-notes .foot-line{
+    float: right;
+    width: 498px;
+    font-size: 11.5px;
+    margin-top: 3px;
+    margin-right: 0px;
+    color: #BEBEC2;
+    letter-spacing: .05px;
+}
+
+footer #bottom-footer .foot-notes .foot-line a{
+    color: #BEBEC2;
+    margin-right: 0px;
+    transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes .foot-line a:hover{
+    opacity: .85;
+}
+
+footer #bottom-footer .foot-notes .foot-line .first-sep {
+    width: 1px;
+    height: 13px;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    background-color: #8A8B93;
+    margin: 0px 5px;
+}
+
+footer #bottom-footer .foot-notes .foot-line .sep {
+    margin-left: 10px;
+}
+
+.last-part{
+    width: 75%;
+    margin: auto;
+    margin-top: 145px;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.last-part span{
+    color: #BEBEC2;
+    font-size: 11.5px;
+    letter-spacing: .18px;
+}
+
+.last-part span a{
+    color: #BEBEC2;
+    transition: 0.2s ease-in-out;
+}
+
+.last-part span a:hover{
+    opacity: 0.85;
+}
+
+footer .logos{
+    /* border: 2px solid red; */
+    width: 74.5%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+footer .logos a{
+    margin: 16px;
+}
+
+footer .logos a img{
+    width: 10%;
+}
+
+footer .logos .one{
+    width: 15.2%;
+}
+
+footer .logos .two{
+    width: 14%;
+}
+
+footer .logos .three{
+    width: 5.8%;
+}
+
+footer .logos .four{
+    width: 7.8%;
+}
+
+footer .logos .five{
+    width: 8%;
+}
+
+footer .logos .six{
+    width: 8%;
+}
+
+footer .logos .seven{
+    width: 6%;
+}
+
+footer .logos .eight{
+    width: 5%;
+}
