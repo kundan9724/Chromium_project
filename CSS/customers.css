@@ -156,12 +156,15 @@ h2 {
   display: flex;
   margin: auto;
   margin-top: 40px;
+  margin-left: 13%;
   gap: 8%;
   color: rgb(120, 86, 255);
-  font-size: 100%;
+  font-size: 11px;
+  font-weight: lighter;
+  font-family: sans-serif;
   position: -webkit-sticky;
   position: sticky;
-  top: 10%;
+  top: 11%;
   background: white;
   max-width: 1300px;
   padding: 15px 4% 0;
@@ -169,81 +172,122 @@ h2 {
 }
 
 #nonprofitimages {
-  width: 80%;
+  width: 1100px;
   display: grid;
-  margin: auto;
+
   grid-row: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 20px;
-  column-gap: 20px;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 15%;
   /* border: 2px solid red; */
 }
 #parkrun {
   background-color: rgba(93, 93, 102, 0.85);
-  grid-area: parkrun;
+  /* grid-area: parkrun; */
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/01/parkrun-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #parkrun:hover {
   background-color: rgba(93, 93, 102, 0.85);
   background-image: unset;
+  transition: 0.2s ease-in-out;
 }
-
+#parkrunoverlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(93, 93, 102, 0.85);
+  opacity: 0.7;
+  position: absolute;
+}
 #parkrun > img {
-  width: 50%;
-  height: 60%;
-  display: block;
-  margin: auto;
-  margin-top: 10%;
-}
-#redcross {
-  grid-area: redcross;
-  height: 200px;
-  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/01/redcross-bw.jpg);
-  background-size: 100% 100%;
-}
-#redcross > img {
-  width: 50%;
-  height: 60%;
-  display: block;
-  margin: auto;
-  margin-top: 10%;
-  opacity: 1;
-}
-#redcross:hover {
-  background-color: rgba(81, 207, 219, 0.85);
-  background-image: unset;
-}
-
-#ual {
-  grid-area: ual;
-  height: 200px;
-  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/12/Salla-Luhtasela-BA-Hons-Ceramic-Design-Central-Saint-Martins.jpg);
-  background-size: 100% 100%;
-  opacity: 0.8;
-}
-#ual > img {
   width: 50%;
   height: 40%;
   display: block;
   margin: auto;
   margin-top: 20%;
+  z-index: 1;
+  filter: brightness(2);
+}
+#redcross {
+  /* grid-area: redcross; */
+  height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/01/redcross-bw.jpg);
+  background-size: 100% 100%;
+  position: relative;
+  opacity: 0.8;
+}
+#redcrossoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(81, 207, 219, 0.85);
+  position: absolute;
+  opacity: 0.8;
+}
+#redcross > img {
+  width: 70%;
+  height: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  opacity: 1;
+  filter: brightness(2);
+}
+#redcross:hover {
+  background-color: rgba(81, 207, 219, 0.85);
+  background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+
+#ual {
+  /* grid-area: ual; */
+  height: 200px;
+  background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/12/Salla-Luhtasela-BA-Hons-Ceramic-Design-Central-Saint-Martins.jpg);
+  background-size: 100% 100%;
+  opacity: 0.8;
+  position: relative;
+}
+#ualoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(93, 93, 102, 0.85);
+  position: absolute;
+  opacity: 0.8;
+}
+#ual > img {
+  width: 60%;
+  height: 30%;
+  display: block;
+  margin: auto;
+  margin-top: 30%;
+  filter: brightness(2);
 }
 #ual:hover {
   background-color: rgba(93, 93, 102, 0.85);
   background-image: unset;
+  transition: 0.2s ease-in-out;
 }
 #cancerfoundation {
-  grid-area: cancerfoundation;
+  /* grid-area: cancerfoundation; */
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2021/03/walk-4-brain-cancer-cure-brain-cancer-foundation1-scaled.jpg);
   background-size: 100% 100%;
   opacity: 0.8;
+  position: relative;
 }
 #cancerfoundation:hover {
   background-color: rgba(120, 86, 255, 0.85);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#canceroverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(120, 86, 255, 0.85);
+  position: absolute;
+  opacity: 0.9;
 }
 #cancerfoundation > img {
   width: 50%;
@@ -251,18 +295,28 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 25%;
+  filter: brightness(2);
 }
 #nord {
   background-color: rgba(120, 86, 255, 0.85);
-  grid-area: nord;
+  /* grid-area: nord; */
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/02/KJ4_2471-2.jpg);
   background-size: 100% 100%;
-  opacity: 0.8;
+  opacity: 0.9;
+  position: relative;
 }
 #nord:hover {
   background-color: rgba(120, 86, 255, 0.85);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#nordoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(120, 86, 255, 0.85);
+  position: absolute;
+  opacity: 0.9;
 }
 #nord > img {
   width: 50%;
@@ -270,18 +324,28 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #ms {
-  grid-area: ms;
+  /* grid-area: ms; */
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2021/02/Screen-Shot-2021-02-15-at-2.48.00-PM.jpg);
   background-color: rgba(81, 207, 219, 0.85);
   background-size: 100% 100%;
   opacity: 0.8;
+  position: relative;
+}
+#msoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(81, 207, 219, 0.85);
+  position: absolute;
+  opacity: 0.9;
 }
 #ms:hover {
   background-color: rgba(81, 207, 219, 0.85);
   background-image: unset;
+  transition: 0.2s ease-in-out;
 }
 #ms > img {
   width: 50%;
@@ -289,17 +353,26 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #en {
-  grid-area: en;
+  /* grid-area: en; */
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/ENO-Aida-Latonia-Moore-3-c-Tristram-Kenton-1.jpg);
-
   background-size: 100% 100%;
+  position: relative;
 }
 #en:hover {
   background-color: rgba(120, 86, 255, 0.85);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#enoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(120, 86, 255, 0.85);
+  position: absolute;
+  opacity: 0.9;
 }
 #en > img {
   width: 50%;
@@ -307,16 +380,26 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #royal {
-  grid-area: royal;
+  /* grid-area: royal; */
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/01/rchf-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
+}
+#royaloverlay {
+  width: 100%;
+  height: 100%;
+  background-color: #5d5d66;
+  position: absolute;
+  opacity: 0.9;
 }
 #royal:hover {
   background-color: #5d5d66;
   background-image: unset;
+  transition: 0.2s ease-in-out;
 }
 #royal > img {
   width: 50%;
@@ -324,9 +407,10 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 
-@media screen and (min-width: 850px) {
+/* @media screen and (min-width: 850px) {
   #nonprofitimages {
     grid-template:
       "parkrun redcross ual cancerfoundation"
@@ -336,10 +420,7 @@ h2 {
   #nonprofitimages > div {
     width: 250px;
   }
-  /* #nonnprofitimages > div {
-    height: 280px;
-  } */
-}
+} */
 
 #nonprofit {
   width: 60%;
@@ -357,23 +438,32 @@ h2 {
   color: rgb(120, 86, 255);
 }
 #mediaimages {
-  width: 60%;
+  width: 1000px;
   display: grid;
   margin: auto;
   grid-row: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 20px;
-  column-gap: 20px;
+  row-gap: 10px;
+  column-gap: 10px;
 }
 #rolemodels {
   /* grid-area: rolemodels; */
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/07/Pic-1-1.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #rolemodels:hover {
   background: rgb(102, 101, 111);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#roleoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: #5d5d66;
+  position: absolute;
+  opacity: 0.8;
 }
 #rolemodels > img {
   width: 50%;
@@ -381,17 +471,27 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #onefortyfour {
   /* grid-area: onefortyfour; */
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/09/paul-hanaoka-HbyYFFokvm0-unsplash.jpg);
   background-size: 100% 100%;
+  position: relative;
+}
+#onefortyfouroverlay {
+  width: 100%;
+  height: 100%;
+  background-color: #5d5d66;
+  position: absolute;
+  opacity: 0.8;
 }
 #onefortyfour:hover {
   opacity: 1;
   background-color: rgb(101, 94, 98);
   background-image: unset;
+  transition: 0.2s ease-in-out;
 }
 #onefortyfour > img {
   width: 50%;
@@ -399,6 +499,7 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #gist {
   opacity: 0.9;
@@ -406,12 +507,20 @@ h2 {
   /* grid-area: gist; */
   height: 200px;
   background-size: 100% 100%;
+  position: relative;
 }
-
+#gistoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(87, 192, 202);
+  position: absolute;
+  opacity: 0.8;
+}
 #gist:hover {
   opacity: 1;
   background-color: rgb(87, 192, 202);
   background-image: unset;
+  transition: 0.2s ease-in-out;
 }
 #gist > img {
   width: 50%;
@@ -419,7 +528,7 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 18%;
-  color: teal;
+  filter: brightness(2);
 }
 #livingly {
   opacity: 0.8;
@@ -427,19 +536,28 @@ h2 {
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/bruno-gomiero-jp7J14W9sSg-unsplash.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #livingly:hover {
   opacity: 1;
   background-color: rgb(139, 103, 242);
   background-image: unset;
+  transition: 0.2s ease-in-out;
 }
-
+#livinglyoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(139, 103, 242);
+  position: absolute;
+  opacity: 0.9;
+}
 #livingly > img {
   width: 50%;
   height: 40%;
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #brew {
   background-color: rgb(139, 103, 242);
@@ -448,11 +566,20 @@ h2 {
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2018/05/tile-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #brew:hover {
   opacity: 1;
   background-color: rgb(139, 103, 242);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#brewoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(139, 103, 242);
+  position: absolute;
+  opacity: 0.7;
 }
 #brew > img {
   width: 50%;
@@ -460,17 +587,27 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #girl {
   /* grid-area: girl; */
   height: 200px;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/OfficeTour-scaled.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #girl:hover {
   opacity: 1;
   background-color: rgb(111, 101, 101);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#girloverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(111, 101, 101);
+  position: absolute;
+  opacity: 0.7;
 }
 #girl > img {
   width: 50%;
@@ -478,6 +615,7 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #media {
   width: 60%;
@@ -498,41 +636,59 @@ h2 {
   color: rgb(120, 86, 255);
 }
 #retailimages {
-  width: 60%;
+  width: 1000px;
   margin: auto;
   display: grid;
-  grid-template-rows: 48% 48%;
-  grid-template-columns: 32% 32% 32%;
-  row-gap: 4%;
-  column-gap: 2%;
-  height: 400px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  /* margin-left: 22%; */
 }
 #gu {
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/06/on-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #gu:hover {
   opacity: 1;
   background-color: rgb(111, 101, 101);
   background-image: unset;
+  transition: 0.2s ease-in-out;
 }
-
+#guoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(111, 101, 101);
+  position: absolute;
+  opacity: 0.7;
+}
 #gu > img {
   width: 50%;
   height: 40%;
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #curl {
-  opacity: 0.5;
+  opacity: 0.8;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/06/ripcurl-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #curl:hover {
   opacity: 1;
   background-color: rgb(234, 54, 103);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#curloverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(230, 50, 99);
+  position: absolute;
+  opacity: 0.8;
 }
 #curl > img {
   width: 50%;
@@ -540,16 +696,26 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #monica {
   opacity: 0.8;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/06/monicavinader-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #monica:hover {
   opacity: 1;
   background-color: rgb(122, 93, 237);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#monicaoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(122, 93, 237);
+  position: absolute;
+  opacity: 0.8;
 }
 #monica > img {
   width: 50%;
@@ -557,52 +723,71 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #tgigolf {
-  opacity: 0.7;
+  opacity: 0.9;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/08/tgi-golf-background.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #tgigolf:hover {
   opacity: 1;
   background-color: rgb(88, 201, 189);
+  transition: 0.2s ease-in-out;
 }
-
+#tgioverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(88, 201, 189);
+  position: absolute;
+  opacity: 0.8;
+}
 #tgigolf > img {
   width: 50%;
   height: 40%;
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #winkel {
   background-color: rgb(88, 201, 189);
-  opacity: 0.8;
+  opacity: 0.9;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/07/winkelstraat-background.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #winkel:hover {
   opacity: 1;
   background-color: rgb(88, 201, 189);
   background-image: unset;
+  transition: 0.2s ease-in-out;
 }
-
+#winkeloverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(88, 201, 189);
+  position: absolute;
+  opacity: 0.8;
+}
 #winkel > img {
-  width: 50%;
+  width: 60%;
   height: 40%;
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #entertainmentimages {
-  width: 80%;
+  width: 1100px;
   display: grid;
   margin: auto;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 3%;
-  column-gap: 2%;
-  height: 600px;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 15%;
 }
 #entertainment {
   width: 60%;
@@ -617,11 +802,20 @@ h2 {
   opacity: 0.8;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/05/wonderfulunion-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #wonderful:hover {
   opacity: 1;
   background-color: rgb(214, 32, 82);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#wonderfuloverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(214, 32, 82);
+  position: absolute;
+  opacity: 0.9;
 }
 #wonderful > img {
   width: 50%;
@@ -629,33 +823,53 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #sxsw {
-  opacity: 0.8;
+  opacity: 0.9;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/05/sxsw-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #sxsw:hover {
   opacity: 1;
   background-color: rgb(79, 186, 196);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#sxswoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(79, 186, 196);
+  position: absolute;
+  opacity: 0.9;
 }
 #sxsw > img {
   width: 40%;
   height: 30%;
   display: block;
   margin: auto;
-  margin-top: 25%;
+  margin-top: 35%;
+  filter: brightness(2);
 }
 #broadway {
-  opacity: 0.8;
+  opacity: 0.9;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/05/broadway-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
+}
+#broadwayoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(110, 81, 225);
+  position: absolute;
+  opacity: 0.8;
 }
 #broadway:hover {
   opacity: 1;
   background-color: rgb(110, 81, 225);
   background-image: unset;
+  transition: 0.2s ease-in-out;
 }
 #broadway > img {
   width: 50%;
@@ -663,17 +877,27 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #bfi {
   background-color: rgb(110, 81, 225);
   opacity: 0.8;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/noom-peerapong-2uwFEAGUm6E-unsplash.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #bfi:hover {
   opacity: 1;
   background-color: rgb(110, 81, 225);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#bfioverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(110, 81, 225);
+  position: absolute;
+  opacity: 0.8;
 }
 #bfi > img {
   width: 50%;
@@ -681,17 +905,29 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #sca {
-  background-color: rgb(110, 81, 225);
+  /* background-color: rgb(110, 81, 225); */
   opacity: 0.8;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/denisse-leon-n4BDkIEls78-unsplash.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #sca:hover {
   opacity: 1;
-  background-color: rgb(110, 81, 225);
+  background: rgb(102, 101, 111);
   background-image: unset;
+  background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#scaoverlay {
+  width: 100%;
+  height: 100%;
+  background: rgb(102, 101, 111);
+  background-image: unset;
+  position: absolute;
+  opacity: 0.8;
 }
 #sca > img {
   width: 50%;
@@ -699,17 +935,28 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #en2 {
   background-color: rgb(110, 81, 225);
   opacity: 0.8;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/ENO-Aida-Latonia-Moore-3-c-Tristram-Kenton-1.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #en2:hover {
   opacity: 1;
   background-color: rgb(110, 81, 225);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#en2overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(110, 81, 225);
+  background-image: unset;
+  position: absolute;
+  opacity: 0.8;
 }
 #en2 > img {
   width: 50%;
@@ -717,16 +964,17 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #travelimages {
-  width: 80%;
+  width: 1100px;
   display: grid;
   margin: auto;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 3%;
-  column-gap: 2%;
-  height: 600px;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 15%;
 }
 #travel {
   width: 60%;
@@ -741,11 +989,21 @@ h2 {
   opacity: 0.8;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/11/resy-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #resy:hover {
   opacity: 1;
   background-color: rgb(88, 195, 206);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#resyoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(88, 195, 206);
+  background-image: unset;
+  position: absolute;
+  opacity: 0.8;
 }
 #resy > img {
   width: 50%;
@@ -753,17 +1011,28 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #tgi {
   background-color: rgb(79, 186, 196);
   opacity: 0.8;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/08/tgi-golf-background.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #tgi:hover {
   opacity: 1;
   background-color: rgb(88, 195, 206);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#golfoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(88, 195, 206);
+  background-image: unset;
+  position: absolute;
+  opacity: 0.8;
 }
 #tgi > img {
   width: 50%;
@@ -771,16 +1040,27 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #drake {
   opacity: 0.8;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/11/drakehotel-bw.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #drake:hover {
   opacity: 1;
   background-color: rgb(110, 81, 225);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#drakeoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(110, 81, 225);
+  background-image: unset;
+  position: absolute;
+  opacity: 0.8;
 }
 #drake > img {
   width: 50%;
@@ -788,33 +1068,55 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #gusto {
-  opacity: 0.8;
+  opacity: 0.9;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/11/P10493-Gusto-107-Final-Web-Use-JPG-1.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #gusto:hover {
   opacity: 1;
   background-color: rgb(88, 195, 206);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#gustooverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(88, 195, 206);
+  background-image: unset;
+  position: absolute;
+  opacity: 0.8;
 }
 #gusto > img {
   width: 50%;
-  height: 40%;
+  height: 20%;
   display: block;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 40%;
+  filter: brightness(2);
 }
 #mad {
   opacity: 0.8;
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/04/madpaws-marketing-with-campaign-monitor.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #mad:hover {
   opacity: 1;
   background-color: rgb(114, 111, 116);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#madoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(114, 111, 116);
+  background-image: unset;
+  position: absolute;
+  opacity: 0.8;
 }
 #mad > img {
   width: 50%;
@@ -822,22 +1124,34 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 20%;
+  filter: brightness(2);
 }
 #bluetent {
   background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/11/benjamin-voros-jv15x2Gs5F8-unsplash.jpg);
   background-size: 100% 100%;
+  position: relative;
 }
 #bluetent:hover {
   opacity: 1;
   background-color: rgb(114, 111, 116);
   background-image: unset;
+  transition: 0.2s ease-in-out;
+}
+#tentoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(114, 111, 116);
+  background-image: unset;
+  position: absolute;
+  opacity: 0.8;
 }
 #bluetent > img {
-  width: 30%;
-  height: 20%;
+  width: 40%;
+  height: 10%;
   display: block;
   margin: auto;
-  margin-top: 40%;
+  margin-top: 50%;
+  filter: brightness(2);
 }
 
 #started {
@@ -846,13 +1160,137 @@ h2 {
   text-align: center;
   margin-top: 60px;
 }
+#started > h1 {
+  font-size: 20px;
+  /* color: white; */
+  font-weight: 400;
+}
 #started > button {
   width: 40%;
   height: 40px;
   background-color: rgb(120, 86, 255);
   color: white;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 850px) {
+
+/* slider section */
+.sliders {
+  display: none;
+}
+.sliders > img {
+  vertical-align: middle;
+  position: relative;
+}
+.imageslider {
+  position: relative;
+  margin-top: 50px;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.imageslider {
+  position: relative;
+}
+#jaybird,
+#curlslider,
+#flightcentre {
+  position: absolute;
+  margin-top: -320px;
+  margin-left: 150px;
+  width: 600px;
+}
+#jaybird > img,
+#curlslider > img,
+#flightcentre > img {
+  margin-bottom: 15px;
+  height: 35px;
+}
+#jaybird > h2,
+#curlslider > h2,
+#flightcentre > h2 {
+  font-size: 25px;
+  color: white;
+  line-height: 1.3em;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+}
+#jaybird > p,
+#curlslider > p,
+#flightcentre > p {
+  text-align: left;
+  margin-left: -4px;
+  color: white;
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: rgb(123, 219, 228);
+}
+
+#skyblue {
+  width: 100%;
+  background: linear-gradient(to right, #7856ff 0%, #65b9ff 100%);
+  text-align: center;
+  height: 600px;
+  color: white;
+}
+#getup {
+  padding-top: 150px;
+  font-size: 2em;
+  line-height: 1.2em;
+  color: white;
+  width: 400px;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+}
+#getup + p {
+  font-size: 1.2em;
+  margin-top: 30px;
+  width: 530px;
+}
+#skyblue > button {
+  padding: 19px 39px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-top: 30px;
+}
+#skyblue > button > a {
+  color: rgb(122, 93, 255);
+}
+
+/* @media screen and (max-width: 850px) {
   #nonprofitimages {
     width: 100%;
 
@@ -863,7 +1301,7 @@ h2 {
       "en royal";
   }
   #nonprofitimages > div {
-    /* width: 25%; */
+    
     margin-left: 0px;
   }
   #mediaimages {
@@ -883,7 +1321,8 @@ h2 {
   h1 {
     font-size: 4.6em;
   }
-}
+} */
+/* imageslider */
 
 /* Footer Section */
 footer {

@@ -1,7 +1,7 @@
 /* CSS Reset */
 body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
     font-family: "Graphik Web", Helvetica, sans-serif;
     font-weight: lighter;
 }
@@ -10,7 +10,7 @@ body{
 header{
     background-color: #111324;
     /* width: 100%; */
-    height: 80px;
+    /* height: 80px; */
     position: sticky;
     top: 0%;
     z-index: 100;
@@ -21,7 +21,9 @@ header{
     /* border: 2px solid red; */
     height: 100%;
     width: 68.5%;
-    margin: auto;
+    /* width: 1300px; */
+    position: relative;
+    left: 15.75%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,67 +31,78 @@ header{
 
 /* Logo inside the Navigation Bar */
 .cmlogo{
-    padding-left: 2px;
-    padding-top: 3px;
-    width: 100%;
+    padding-left: 1%;
+    padding-top: 2%;
+    /* width: 100%; */
     /* border: 2px solid red; */
 }
 
 /* Navigation Menu */
 #nav-menu{
-    height: 100%;
-    width: 45%;
+    float: right;
+    font-weight: lighter;
+    width: 74.5%;
     display: flex;
+    justify-content: space-between;
     /* border: 2px solid red; */
 }
 
-/* Secondary Menu */
-#secondary-menu{
-    height: 100%;
-    width: 22%;
+#primary{
+    /* border: 2px solid red; */
     display: flex;
+}
+
+#secondary{
+
+    float: right;
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
     /* border: 2px solid red; */
 }
 
-#secondary-menu > .btn{
+#nav-menu a:not(.btn){
+    /* border: 2px solid red; */
+    letter-spacing: .14em;
+    font-size: 0.88em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 8% 3%;
+    padding-bottom: 6.8%;
+    box-sizing: border-box;    
+    transition: 0.2s ease-in-out;
+}
+
+#nav-menu #secondary a:not(.btn){
+    padding: 11.8% 2%;
+    padding-right: 2%;
+    padding-bottom: 0%;
+    font-size: 0.95em;
+    letter-spacing: .12em;
+}
+
+header #nav-menu #secondary .btn{
+    height: 15%;
+    float: right;
+    font-size: 0.92em;
     font-weight: bold;
-    letter-spacing: 0;
+    text-decoration: none;
+    padding: 5% 5.5%;
+    margin: 7% 0%;
+    margin-bottom: 0%;
     border-radius: 3px;
     background: #51CFDB;
-    margin: 20px 0px 0px 10px;
-    padding: 12px 15px;
-    height: 40px;
     color: #111324;
     transition: 0.2s;
 }
 
-/* Anchor Tag properties */
-#nav-bar > a{
-    width: 18%;
-}
-
-#nav-bar #nav-menu a,#secondary-menu a{
-    letter-spacing: .115em;
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-    /* border: 2px solid red; */
-    text-align: center;
-    padding: 33px 12px;
-    box-sizing: border-box;    
-    transition: 0.2s;
-}
-
-#secondary-menu a{
-    letter-spacing: .13em;  
-}
-
 /* Hover Effects */
-#nav-bar #nav-menu a:hover,#secondary-menu a:not(.btn):hover{
+#nav-bar #nav-menu a:not(.btn):hover{
     color: #51CFDB;
 }
 
-header #secondary-menu .btn:hover{
+header #nav-menu #secondary .btn:hover{
     background: #6ad6e0;
 }
 
@@ -237,15 +250,17 @@ header #secondary-menu .btn:hover{
 
 #beautiful{
     /* border: 2px solid red; */
-    padding: 85px;
-    padding-bottom: 0px;
+    width: 100%;
+    padding-top: 85px;
+    /* padding-bottom: 0px; */
     height: 884px;
     border-top: 1px solid rgb(238, 238, 238);
     border-bottom: 1px solid rgb(238, 238, 238);
 }
 
 #beautiful #content {
-    width: 1300px;
+    /* width: 1300px; */
+    width: 68.5%;
     /* border: 2px solid red; */
     margin: auto;
 }
@@ -502,6 +517,7 @@ header #secondary-menu .btn:hover{
     box-shadow: 0px 0px 10px 0px rgb(0,0,0,.3);
     transition: 0.2s ease-in-out;
     overflow: hidden;
+    z-index: 100;
 }
 
 .fancy a{
@@ -673,6 +689,7 @@ footer{
 
 footer .cmlogo{
     display: inline;
+    padding: .15%;
 }
 
 footer a{
@@ -747,8 +764,12 @@ footer #bottom-footer{
 }
 
 footer #bottom-footer .btn-container{
-    width: 488px;
+    width: 18.12%;
     float: left;
+}
+
+footer #bottom-footer .btn-container a{
+    width: 100%;
 }
 
 footer #bottom-footer .foot-notes{
