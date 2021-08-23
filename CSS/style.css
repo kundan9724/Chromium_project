@@ -755,6 +755,8 @@ footer{
     color: white;
     padding: 60px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Top Part of footer with links */
@@ -769,8 +771,8 @@ footer a{
 }
 
 footer #footer-cont{
-    width: 73.1%;
-    margin: auto;
+    /* width: 73.1%; */
+    width: 1300px;
 }
 
 footer #footer-cont #top-footer{
@@ -964,4 +966,15 @@ footer .logos .seven{
 
 footer .logos .eight{
     width: 5%;
+}
+
+/* media Queries */
+
+@media only screen and (max-width: 1630px){
+    footer #bottom-footer .btn-container a{
+        font-size: 12px;
+    }
+    footer{
+        justify-content: space-evenly;
+    }
 }
