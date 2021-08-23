@@ -16,8 +16,6 @@ header{
     z-index: 100;
 }
 
-
-
 /* Navigation Bar */
 #nav-bar{
     /* border: 2px solid red; */
@@ -31,67 +29,75 @@ header{
 
 /* Logo inside the Navigation Bar */
 .cmlogo{
-    padding-left: 2px;
-    padding-top: 3px;
-    width: 100%;
+    padding-left: 1%;
+    padding-top: 2%;
+    /* width: 100%; */
     /* border: 2px solid red; */
 }
 
 /* Navigation Menu */
 #nav-menu{
+    float: right;
+    font-weight: lighter;
     height: 100%;
-    width: 45%;
+    width: 74.5%;
     display: flex;
+    justify-content: space-between;
     /* border: 2px solid red; */
 }
 
-/* Secondary Menu */
-#secondary-menu{
-    height: 100%;
-    width: 22%;
+#primary{
+    /* border: 2px solid red; */
     display: flex;
+}
+
+#secondary{
+
+    float: right;
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
     /* border: 2px solid red; */
 }
 
-#secondary-menu > .btn{
+#nav-menu a:not(.btn){
+    /* border: 2px solid red; */
+    letter-spacing: .14em;
+    font-size: 0.88em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 8% 3%;
+    box-sizing: border-box;    
+    transition: 0.2s ease-in-out;
+}
+
+#nav-menu #secondary a:not(.btn){
+    padding: 11.8% 2%;
+    padding-right: 6%;
+    font-size: 0.95em;
+    letter-spacing: .12em;
+}
+
+header #nav-menu #secondary .btn{
+    float: right;
+    font-size: 0.92em;
     font-weight: bold;
-    letter-spacing: 0;
+    text-decoration: none;
+    padding: 5% 5.5%;
+    margin: 7% 0%;
     border-radius: 3px;
     background: #51CFDB;
-    margin: 20px 0px 0px 10px;
-    padding: 12px 15px;
-    height: 40px;
     color: #111324;
     transition: 0.2s;
 }
 
-/* Anchor Tag properties */
-#nav-bar > a{
-    width: 18%;
-}
-
-#nav-bar #nav-menu a,#secondary-menu a{
-    letter-spacing: .115em;
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-    /* border: 2px solid red; */
-    text-align: center;
-    padding: 33px 12px;
-    box-sizing: border-box;    
-    transition: 0.2s;
-}
-
-#secondary-menu a{
-    letter-spacing: .13em;  
-}
-
 /* Hover Effects */
-#nav-bar #nav-menu a:hover,#secondary-menu a:not(.btn):hover{
+#nav-bar #nav-menu a:not(.btn):hover{
     color: #51CFDB;
 }
 
-header #secondary-menu .btn:hover{
+header #nav-menu #secondary .btn:hover{
     background: #6ad6e0;
 }
 
