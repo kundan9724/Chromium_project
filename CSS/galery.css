@@ -124,6 +124,11 @@ body{
         border: 0px;
         border-radius: 5px;
     }
+    #top > #free:hover {
+        background-color: #886aff;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
     #filter {
         width: 80%;
         height: auto;
@@ -140,16 +145,17 @@ body{
         margin-top: 28px;
     }
     #filter > .b1 {
-        font-size: 1.2em;
+        font-size: 1.0em;
         color: white;
         background-color: #7756FE;
         font-weight: 600;
         border-radius: 20px;
-        padding-top: 9px;
+        padding-top: 15px;
         text-align: center;
         width: 113px;
         height: 36px;
         margin: 20px;
+        cursor: pointer;
     }
     #filter > .c1 {
         font-size: 1.2em;
@@ -177,142 +183,164 @@ body{
     #grid > div {
         width: 256px;
         height: 390px;
+        position: relative;
     }
     #grid > .a {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/jaybird_v1-269x389.jpg);
-        background-size: cover;
         grid-area: a;
     }
+    #grid > div > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #grid > div:nth-child(odd) > .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-family: monospace;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+    #grid > div:nth-child(even) > .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:#62D4DF;
+        color: white;
+        font-family: monospace;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+    #grid > div:nth-child(odd) > .overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+    #grid > div:nth-child(odd) > .overlay:hover > * {
+        transform: translateY(0);
+    }
+    #grid > div:nth-child(odd) > .overlay:hover {
+        opacity: .8;
+    }
+    #grid > div:nth-child(odd) > .overlay > .title{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    #grid > div:nth-child(even) > .overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+    #grid > div:nth-child(even) > .overlay:hover > * {
+        transform: translateY(0);
+    }
+    #grid > div:nth-child(even) > .overlay:hover {
+        opacity: .8;
+    }
+    #grid > div:nth-child(even) > .overlay > .title{
+        font-size: 2em;
+        font-weight: bold;
+    }
     #grid > .b {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_wonderfulunion-269x389.jpg);
-        background-size: cover;
         grid-area: b;
     }
     #grid > .c {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_whaledolphin-269x389.jpg);
-        background-size: cover;
         grid-area: c;
     }
     #grid > .d {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_sxsw-269x389.jpg);
-        background-size: cover;
         grid-area: d;
     }
     #grid > .e {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_unicef-269x389.jpg);
-        background-size: cover;
         grid-area: e;
     }
     #grid > .f {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_soho-269x389.jpg);
-        background-size: cover;
         grid-area: f;
     }
     #grid > .g {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_royalchilderns-269x389.jpg);
-        background-size: cover;
         grid-area: g;
     }
     #grid > .h {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_rollingstone-269x389.jpg);
-        background-size: cover;
         grid-area: h;
     }
     #grid > .i {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_rollingstone-269x389.jpg);
-        background-size: cover;
         grid-area: i;
     }
     #grid > .j {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_ripcurl-1-269x389.jpg);
-        background-size: cover;
         grid-area: j;
     }
     #grid > .k {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_resy-269x389.jpg);
-        background-size: cover;
         grid-area: k;
     }
     #grid > .l {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_redcross-269x389.jpg);
-        background-size: cover;
         grid-area: l;
     }
     #grid > .m {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_parkrun-269x389.jpg);
-        background-size: cover;
         grid-area: m;
     }
     #grid > .n {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_on-269x389.jpg);
-        background-size: cover;
         grid-area: n;
     }
     #grid > .o {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_monicavinader-269x389.gif);
-        background-size: cover;
         grid-area: o;
     }
     #grid > .p {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_glamcorner-269x389.jpg);
-        background-size: cover;
         grid-area: p;
     }
     #grid > .q {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_flume-269x389.jpg);
-        background-size: cover;
         grid-area: q;
     }
     #grid > .r {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_flightcetnre-269x389.jpg);
-        background-size: cover;
         grid-area: r;
     }
     #grid > .s {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_drake-269x389.jpg);
-        background-size: cover;
         grid-area: s;
     }
     #grid > .t {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_flume-269x389.jpg);
-        background-size: cover;
         grid-area: t;
     }
     #grid > .u {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_chat-269x389.gif);
-        background-size: cover;
         grid-area: u;
     }
     #grid > .v {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_flightcetnre-269x389.jpg);
-        background-size: cover;
         grid-area: v;
     }
     #grid > .w {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_flume-269x389.jpg);
-        background-size: cover;
         grid-area: w;
     }
     #grid > .x {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_birchbox-269x389.gif);
-        background-size: cover;
         grid-area: x;
     }
     #grid > .y {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_flightcetnre-269x389.jpg);
-        background-size: cover;
         grid-area: y;
     }
     #grid > .z {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/gallery_1076x1556_flume-269x389.jpg);
-        background-size: cover;
         grid-area: z;
     }
     .flex {
         width: 80%;
-        margin-left: 10%;
+        margin-left: 7%;
         margin-top: 5%;
         display: flex;
+    }
+    .flex > div {
+        width: 30%;
+        margin: 3%;
+    }
+    .flex > div > h2 {
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        font-weight: bold;
     }
     #last > h1 {
         text-align: center;
@@ -320,32 +348,32 @@ body{
     }
     #end {
         width: 100%;
-        height: 582px;
-        padding-top: 20%;
-        margin-top: 5%;
         text-align: center;
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100;Blue+Gloss+%232 */
-        background: #3b679e; /* Old browsers */
-        background: -moz-linear-gradient(top,  #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+        margin-top: 72px;
+        background: linear-gradient(to right, #7856FF 0%, #65B9FF 100%);
+        height: 586px;
 
     }
-    #end > h {
+    #end > div {
+        width: 40%;
+        height: 40%;
+        margin: auto;
+        padding-top: 150px;
+    }
+    #end > div > h {
         font-family: 'Graphik Web', Helvetica, sans-serif;
-        font-size: 2.7em;
+        font-size: 2.2em;
         line-height: 1.167em;
-        font-weight: 600;
+        font-weight: 500;
         color: white;
     }
-    #end > p {
+    #end > div > p {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px;
+        font-size: 1.5em;
         font-weight: 400;
         color: white;
     }
-    #end > #try {
+    #end >div > #try {
         width: 171px;
         height: 60px;
         text-align: center;
@@ -353,7 +381,15 @@ body{
         border: 0px;
         border-radius: 5px;
         background-color: white;
-        font-weight: 600;
+    }
+    #end > div > #try:hover {
+        background-color: #7084FF;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        border: 1px solid white;
+        color: white;
+        font-weight: bold;
+        transition: 0.2s ease-in-out;
     }
 }
 @media screen and (min-width: 400px)
