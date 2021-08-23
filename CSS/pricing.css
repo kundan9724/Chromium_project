@@ -181,6 +181,7 @@ h2 > button {
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   width: 60px;
   height: 60px;
   background: rgb(120, 86, 255);
@@ -188,25 +189,28 @@ h2 > button {
   border-radius: 30px;
   background-image: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/slider-53-886649.png");
   background-size: contain;
-  background-position: center center;
+  position: relative;
+
   background-repeat: no-repeat;
+
   cursor: pointer;
 }
+
 a {
   color: white;
   text-decoration: none;
 }
-.slider::-moz-range-thumb {
+/* .slider::-moz-range-thumb {
   width: 60px;
   height: 60px;
-  background: rgb(120, 86, 255);
+  background: red;
   border-radius: 20px;
   background-image: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/slider-53-886649.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
-}
+} */
 /* #pricing {
   display: grid;
   width: 100%;
@@ -228,7 +232,9 @@ a {
   padding-bottom: 60px;
   padding-top: 30px;
   margin-bottom: 100px;
+  border: white;
 }
+
 #contacts {
   margin: auto;
   /* margin-left: 30px; */
