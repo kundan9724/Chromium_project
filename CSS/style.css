@@ -21,6 +21,7 @@ header{
     /* border: 2px solid red; */
     height: 100%;
     width: 68.5%;
+    /* width: 1300px; */
     position: relative;
     left: 15.75%;
     display: flex;
@@ -258,7 +259,8 @@ header #nav-menu #secondary .btn:hover{
 }
 
 #beautiful #content {
-    width: 1300px;
+    /* width: 1300px; */
+    width: 68.5%;
     /* border: 2px solid red; */
     margin: auto;
 }
