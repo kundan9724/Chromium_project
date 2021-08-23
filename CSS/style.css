@@ -14,16 +14,18 @@ header{
     position: sticky;
     top: 0%;
     z-index: 100;
+    display: grid;
+    justify-content: space-around;
 }
 
 /* Navigation Bar */
 #nav-bar{
     /* border: 2px solid red; */
     height: 100%;
-    width: 68.5%;
-    /* width: 1300px; */
-    position: relative;
-    left: 15.75%;
+    /* width: 68.5%; */
+    width: 1300px;
+    /* position: relative;
+    left: 15.75%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
