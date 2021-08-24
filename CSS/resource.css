@@ -108,22 +108,30 @@ body{
     }
     #sub {
         width: 130px;
-        height: 38px;
+        height: 45px;
         border-radius: 5px;
         background-color: #F6F6F7;
-        margin-top: 1%;
+        margin-top: 0.5%;
         margin-left: 2%;
+        font-weight: bold;
+        font-size: 15px;
+        border: 0px;
+    }
+    #sub:hover {
+        color: #7856FF;
+        cursor: pointer;
     }
     #head > .text > h {
         font-size: 56px;
         color: #FFFFFF;
-        margin-left: 30%;
+        margin-left: 27%;
         font-family: "Graphik Web", Helvetica, sans-serif;
     }
     #head > .text > p {
         font-size: 20px;
         color: #FFFF;
         text-align: center;
+        margin-left: 25px;
     }
     #head > .text {
         width: 100%;
@@ -131,9 +139,10 @@ body{
         padding-top: 10%;
     }
     #headbottom > p {
-        font-size: 20px;
+        font-size: 17px;
         color: #FFFFFF;
         margin-left: 30%;
+        padding-top: .5%;
     }
     .logo1{
         height: 40px;
@@ -157,6 +166,9 @@ body{
         height: 45px;
         margin-left: 5%;
         border-radius: 5px;
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
     }
     .filter1 > p {
         margin: 20px;
@@ -170,6 +182,14 @@ body{
         padding: 0%;
         margin-top: 1%;
     }
+    .filter1 > p1:hover {
+        color: #7856FF;
+        cursor: pointer;
+    }
+    .filter1 > p:hover {
+        color: #7856FF;
+        cursor: pointer;
+    }
     #mid {
         width: 80%;
         height: 1000px;
@@ -182,7 +202,6 @@ body{
     #mid > .flex > div{
         width: 35%;
         height: 90%;
-        border: 1px solid darkgrey;
         margin-top: 1%;
         margin-left: 1.5%;
     }
@@ -192,18 +211,56 @@ body{
     }
     .box1 {
         background-color: #FFFFFF;
-        border: .5px solid darkgrey;
+        border: 1px solid rgb(0,0,0,0.5);
+
     }
-    .box1 > p {
-        font-family: Arial, Helvetica, sans-serif;
+    .box1 > .notes > p {
+        font-family: "Graphik Web", Helvetica, sans-serif;
         font-size: 25px;
-        color: darkgrey;
+        color: #696969 ;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .notes {
+        width: 100%;
+        height: 50%;
+        display: block;
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        background: #FFFFFF;
+        color: darkgrey;
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.25s;
+        font-size: 25px;
+        text-align: center;
+    }
+    .overlay:hover {
+        opacity: 10;
+    }
+    .overlay > *{
+        transform: translateY(0);
+    }
+    .overlay:hover > * {
+        transform: translateY(20px);
+        transition: transform 1.25s;
     }
     .box2 {
         background-color: #7856FF;
     }
-    .box2 > p {
+    .box2 >  p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 25px;
         color: white;
@@ -211,6 +268,7 @@ body{
     }
     .box3 {
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/wall-street-journal-img-copy-570x675.jpg);
+        
         background-size: cover;
     }
     .box3 > p {
@@ -218,6 +276,26 @@ body{
         font-size: 25px;
         color: white;
         text-align: center;
+    }
+    .box4 > div {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        font-weight: normal;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+    }
+    .box2 > div {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        font-weight: normal;
+        width: 80%;
+        height: 80%;
+        margin: auto;
     }
     .box4 {
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/dark-with-bubbles-570x675.jpg);
@@ -297,7 +375,7 @@ body{
         background-color: #FFFFFF;
         text-align: center;
         font-size: 25px;
-        color: darkgrey;
+        color: #696969;
     }
     #mid2 {
         width: 80%;
@@ -330,6 +408,11 @@ body{
         font-size: 15px;
         margin-top: 1.8%;
         margin-bottom: 7%;
+        border: 0px;
+    }
+    #get:hover {
+        background-color: #886aff;
+        cursor: pointer;
     }
     #mid3 > h1 {
         font-size: 40px;
@@ -343,6 +426,12 @@ body{
         color: aqua;
         margin-top: 2%;
         background-color: white;
+    }
+    #see:hover {
+        background-color: aqua;
+        color: black;
+        cursor: pointer;
+        font-weight: bold;
     }
     #mid5{
         width: 80%;
@@ -469,38 +558,79 @@ body{
         color: black;
         margin-top: 1.5%;
         margin-left: 1.5%;
+        border: 0px;
+    }
+    .sublast:hover {
+        background-color: darkturquoise;
+        cursor: pointer;
     }
     #end {
         width: 100%;
-        height: 581px;
-        background: #7db9e8;
-        background: -moz-linear-gradient(top,  #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
-        background: -webkit-linear-gradient(top,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%);
-        background: linear-gradient(to bottom,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 );
-        ;
         text-align: center;
-        padding-top: 20%;
+        margin-top: 72px;
+        background: linear-gradient(to right, #7856FF 0%, #65B9FF 100%);
+        height: 586px;
+
     }
-    #end > h {
-        font-size: 35px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
+    #end > div {
+        width: 40%;
+        height: 40%;
+        margin: auto;
+        padding-top: 150px;
+    }
+    #end > div > h {
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-size: 2.2em;
+        line-height: 1.167em;
+        font-weight: 500;
         color: white;
     }
-    #end > p {
-        font-size: 20px;
-        color: white;;
-    }
-    #end > #free {
-        height: 70px;
-        width: 173px;
-        background-color: white;
-        color: #7856FF;
-        text-align: center;
-        border-radius: 5px;
-        font-size: 15px;
+    #end > div > p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
         font-weight: 400;
+        color: white;
+    }
+    #end >div > #try {
+        width: 171px;
+        height: 60px;
+        text-align: center;
+        color: #7756FE;
+        border: 0px;
+        border-radius: 5px;
+        background-color: white;
+    }
+    #end > div > #try:hover {
+        background-color: #7084FF;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        border: 1px solid white;
+        color: white;
+        font-weight: bold;
+    }
+    .box1:hover{
+        cursor: pointer;
+    }
+    .box2:hover{
+        cursor: pointer;
+    }
+    .box3:hover{
+        cursor: pointer;
+    }
+    .box4:hover{
+        cursor: pointer;
+    }
+    .box5:hover{
+        cursor: pointer;
+    }
+    .box6:hover{
+        cursor: pointer;
+    }
+    .box7:hover{
+        cursor: pointer;
+    }
+    .imgbox:hover{
+        cursor: pointer;
     }
 }
 @media screen and (min-width: 400px)
