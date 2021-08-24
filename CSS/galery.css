@@ -6,22 +6,26 @@ body{
     font-weight: lighter;
   }
   
-  /* Header Section */
-  header{
+ /* Header Section */
+header{
     background-color: #111324;
-    /* width: 100%; */
+    width: 100%;
     height: 80px;
     position: sticky;
     top: 0%;
     z-index: 100;
+    display: grid;
+    justify-content: space-around;
   }
   
   /* Navigation Bar */
   #nav-bar{
     /* border: 2px solid red; */
     height: 100%;
-    width: 68.5%;
-    margin: auto;
+    /* width: 68.5%; */
+    width: 1300px;
+    /* position: relative;
+    left: 15.75%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,69 +33,195 @@ body{
   
   /* Logo inside the Navigation Bar */
   .cmlogo{
-    padding-left: 2px;
-    padding-top: 3px;
-    width: 100%;
+    padding-left: 1%;
+    padding-top: 2%;
+    /* width: 100%; */
     /* border: 2px solid red; */
+    transition: 0.2s ease-in-out;
   }
   
   /* Navigation Menu */
   #nav-menu{
-    height: 100%;
-    width: 45%;
+    float: right;
+    font-weight: lighter;
+    width: 74.5%;
     display: flex;
+    justify-content: space-between;
     /* border: 2px solid red; */
   }
   
-  /* Secondary Menu */
-  #secondary-menu{
-    height: 100%;
-    width: 22%;
+  #primary{
+    /* border: 2px solid red; */
     display: flex;
+  }
+  
+  #secondary{
+  
+    float: right;
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
     /* border: 2px solid red; */
   }
   
-  #secondary-menu > .btn{
+  #nav-menu a:not(.btn){
+    /* border: 2px solid red; */
+    letter-spacing: .14em;
+    font-size: 0.88em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 8% 3%;
+    padding-bottom: 6.8%;
+    box-sizing: border-box;    
+    transition: 0.2s ease-in-out;
+  }
+  
+  #nav-menu #secondary a:not(.btn){
+    padding: 11.8% 2%;
+    padding-right: 2%;
+    padding-bottom: 0%;
+    font-size: 0.95em;
+    letter-spacing: .12em;
+  }
+  
+  header #nav-menu #secondary .btn{
+    height: 15%;
+    float: right;
+    font-size: 0.92em;
     font-weight: bold;
-    letter-spacing: 0;
+    text-decoration: none;
+    padding: 5% 5.5%;
+    margin: 7% 0%;
+    margin-bottom: 0%;
     border-radius: 3px;
     background: #51CFDB;
-    margin: 20px 0px 0px 10px;
-    padding: 12px 15px;
-    height: 40px;
     color: #111324;
     transition: 0.2s;
   }
   
-  /* Anchor Tag properties */
-  #nav-bar > a{
-    width: 18%;
-  }
-  
-  #nav-bar #nav-menu a,#secondary-menu a{
-    letter-spacing: .115em;
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-    /* border: 2px solid red; */
-    text-align: center;
-    padding: 33px 12px;
-    box-sizing: border-box;    
-    transition: 0.2s;
-  }
-  
-  #secondary-menu a{
-    letter-spacing: .13em;  
-  }
-  
   /* Hover Effects */
-  #nav-bar #nav-menu a:hover,#secondary-menu a:not(.btn):hover{
+  #nav-bar #nav-menu a:not(.btn):hover{
     color: #51CFDB;
   }
   
-  header #secondary-menu .btn:hover{
+  header #nav-menu #secondary .btn:hover{
     background: #6ad6e0;
   }
+  
+  /* Media query for header */
+  @media only screen and (max-width: 1400px) {
+    header #nav-menu a:not(.btn){
+        font-size: .75em;
+        padding-right: 1%;
+    }
+    
+    header #nav-menu #secondary a:not(.btn){
+        font-size: .75em;
+        padding-right: 1%;
+    }
+    header #nav-menu{
+        width: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 1360px) {
+    header #nav-menu #secondary .btn{
+        padding: 4.7% 5%;
+        font-size: 0.8em;
+    }
+    #nav-bar{
+        width: 1200px;
+    }
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    header #nav-bar .cmlogo svg{
+        padding: 0%;
+        width: 75%;
+    }
+  }
+  
+  @media only screen and (max-width: 1250px) {
+    header #nav-bar{
+        width: 1100px;
+    }
+  }
+  
+  @media only screen and (max-width: 1111px) {
+    
+    header #nav-bar .cmlogo svg g path:nth-child(1){
+        display: none;
+    }
+    header #nav-bar{
+        width: 1000px;
+        justify-content: space-evenly;
+    }
+  }
+  
+  @media only screen and (max-width: 1023px) {
+    
+    header #nav-bar #secondary a:nth-child(2){
+        display: none;
+    }
+    
+    header #nav-bar #secondary{
+        justify-content: space-evenly;
+    }
+  }
+  
+  @media only screen and (max-width: 950px) {
+    header #nav-bar{
+        width: 900px;
+    }
+  
+  }
+  
+  /* Fancy section */
+  .fancy{
+    position: fixed;
+    height: 52px;
+    width: 52px;
+    border-radius: 50px;
+    bottom: 2.1%;
+    right: 1.05%;
+    background-color: #7856FF;
+    box-shadow: 0px 0px 10px 0px rgb(0,0,0,.3);
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+    z-index: 100;
+  }
+  
+  .fancy a{
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    fill: white;
+    text-decoration: none;
+    color: #7856FF;
+  }
+  
+  .fancy a .icon svg{
+    height: 24px;
+    position: relative;
+    top: 14px;
+    left: 4px;
+  }
+  
+  .fancy a span{
+    /* border: 2px solid red; */
+    padding-bottom: 14px;
+    padding-right: 11px;
+    position: relative;
+    top: -10px;
+    left: 52px;
+  }
+  
+  .fancy:hover, .fancy a:hover{
+    width: 150px;
+    color: white;
+  }
+  
+  
 
 @media screen and (min-width: 1200px) {
     #top {
@@ -962,6 +1092,8 @@ footer{
     color: white;
     padding: 60px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
   }
   
   .btn-container{
@@ -996,6 +1128,7 @@ footer{
   
   footer .cmlogo{
     display: inline;
+    padding: .15%;
   }
   
   footer a{
@@ -1003,8 +1136,8 @@ footer{
   }
   
   footer #footer-cont{
-    width: 73.1%;
-    margin: auto;
+    /* width: 73.1%; */
+    width: 1300px;
   }
   
   footer #footer-cont #top-footer{
@@ -1070,8 +1203,12 @@ footer{
   }
   
   footer #bottom-footer .btn-container{
-    width: 488px;
+    width: 18.12%;
     float: left;
+  }
+  
+  footer #bottom-footer .btn-container a{
+    width: 100%;
   }
   
   footer #bottom-footer .foot-notes{
@@ -1195,3 +1332,15 @@ footer{
   footer .logos .eight{
     width: 5%;
   }
+  
+  /* media Queries */
+  
+  @media only screen and (max-width: 1630px){
+    footer #bottom-footer .btn-container a{
+        font-size: 12px;
+    }
+    footer{
+        justify-content: space-evenly;
+    }
+  }
+  
