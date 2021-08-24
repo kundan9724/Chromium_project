@@ -103,13 +103,46 @@ form > p {
 button + p {
   margin: 20px;
   margin-bottom: 50px;
+  font-size: 0.65em;
+  line-height: 1.3em;
+  color: #5d5d66;
+  width: 86%;
+  margin-left: 25px;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+}
+button + p > a {
+  text-decoration: none;
 }
 #fullName {
   margin-top: 35px;
 }
 form ~ p {
-  font-size: 14px;
+  font-size: 0.75em;
+  line-height: 1.3em;
   margin: 20px;
+  color: #111324;
+  opacity: 0.9;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+}
+form ~ p > a,
+#terms > p > a {
+  color: black;
+}
+#terms {
+  width: 70%;
+  margin: auto;
+  margin-left: 70px;
+  margin-bottom: 50px;
+  font-size: 0.75em;
+  line-height: 1.3em;
+  opacity: 0.9;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+}
+form ~ p > a:hover {
+  text-decoration: none;
+}
+#terms > p > a:hover {
+  text-decoration: none;
 }
 form + p + p {
   margin-bottom: 50px;

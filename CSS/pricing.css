@@ -396,6 +396,10 @@ h1 {
 
   font-size: 2em;
 }
+#terms {
+  color: red;
+  margin: auto;
+}
 #getup + p {
   font-size: 1em;
   margin-top: -20px;
