@@ -69,20 +69,20 @@
         type="text"
         id="textbox"
         value="500"
-        oninput="updateTextBox(this.value),myRange.value=textbox.value "
+        oninput="updateTextBox(this.value),myRange.value=textbox.value"
       />
       &nbsp;<b>contacts, we've got the right plan for you.</b>
     </h2>
     <div class="slider">
       <input
         type="range"
-        min="0"
+        min="500"
         max="50000"
         value="0"
         class="slider"
         id="myRange"
         ;
-        oninput="textbox.value=myRange.value,updateTextBox(this.value)"
+        oninput="textbox.value=myRange.value,updateTextBox(this.value),empty()"
         ;
       />
     </div>
@@ -420,7 +420,10 @@
         </div>
       </div>
     </div>
-    <p>Only sending emails occasionally? You can also pay per campaign.</p>
+    <p>
+      Only sending emails occasionally? You can also
+      <a href="" class="payper">pay per campaign.</a>
+    </p>
     <h1>Frequently Asked Questions</h1>
     <div id="faq">
       <div>
@@ -498,7 +501,9 @@
         Our powerful, easy-to-use marketing tools can help your business take
         off.
       </p>
-      <button><a href="signup.html">Try it for free</a></button>
+      <button onclick="window.location.href='signup.html'">
+        Try it for free
+      </button>
     </div>
 
     <footer>
@@ -751,6 +756,9 @@
     <script>
       function updateTextBox(val) {
         document.getElementById("textbox").value = val;
+        var x = document.getElementById("myRange");
+        var defaultVal = x.defaultValue;
+        var currentVal = x.value;
 
         if (val >= 0 && val <= 509) {
           document.getElementById("basicamount").innerHTML = 9;
@@ -781,6 +789,7 @@
           document.getElementById("premiumamount").innerHTML = 989;
         }
       }
+
       // let input = document.getElementsByClassName("slider");
       // let textBox = document.querySelector("#textbox");
       // textBox.innerHTML = input.value;

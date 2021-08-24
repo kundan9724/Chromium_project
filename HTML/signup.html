@@ -16,12 +16,10 @@
     />
   </head>
   <body>
+    <div id="signupbackground"></div>
     <div id="signup">
       <div id="campaignMonitor">
-        <img
-          src="https://www.coywolf.news/wp-content/uploads/2019/10/campaign-monitor-icon.png"
-          alt=""
-        />
+        <img src="../Resources/logo.png" alt="" />
         <h2>Campaign Monitor</h2>
       </div>
       <h1>Sign up for free.</h1>
@@ -37,6 +35,7 @@
           placeholder="Full name"
           id="fullName"
           onclick="labelNameChange(placeholder)"
+          onfocus="this.value=''; this.style.color = '#9933FF'"
         />
         <label id="companyName"></label>
         <input
@@ -64,37 +63,51 @@
           us,please review our privacy statement.
         </p>
       </form>
-      <p>Already have an account?Log in</p>
+      <p>Already have an account?<a href="login.html">Log in</a></p>
       <p>By signing up, you agree to our Terms of Use and Anti-spam Policy.</p>
     </div>
     <script>
       function labelNameChange(placeholder) {
         var name = document.getElementById("labelName");
         name.innerHTML = placeholder + " *";
+
+        var companyName = document.getElementById("companyName");
+        companyName.innerHTML = "";
+        var email = document.getElementById("email");
+        email.innerHTML = "";
+        var password = document.getElementById("password");
+        password.innerHTML = "";
       }
+
       function labelCompanyChange(placeholder) {
-        // var element = document.getElementById("labelName");
-        // element.parentNode.removeChild(element);
-        // var element = document.getElementById("email");
-        // element.parentNode.removeChild(element);
         var companyName = document.getElementById("companyName");
         companyName.innerHTML = placeholder + " *";
+        var email = document.getElementById("email");
+        email.innerHTML = "";
+        var password = document.getElementById("password");
+        password.innerHTML = "";
+        var name = document.getElementById("labelName");
+        name.innerHTML = "";
       }
       function emailLabelChange(placeholder) {
-        // var element = document.getElementById("labelName");
-        // element.parentNode.removeChild(element);
-        // var element = document.getElementById("companyName");
-        // element.parentNode.removeChild(element);
         var email = document.getElementById("email");
         email.innerHTML = placeholder + " *";
-        // if (nameLabelChange(placeholder)) {
-        //   var name = document.getElementById("labelName");
-        //   name.innerHTML = placeholder + " *";
-        // }
+        var name = document.getElementById("labelName");
+        name.innerHTML = "";
+        var companyName = document.getElementById("companyName");
+        companyName.innerHTML = "";
+        var password = document.getElementById("password");
+        password.innerHTML = "";
       }
       function passwordLabelChange(placeholder) {
         var password = document.getElementById("password");
         password.innerHTML = placeholder + " *";
+        var name = document.getElementById("labelName");
+        name.innerHTML = "";
+        var companyName = document.getElementById("companyName");
+        companyName.innerHTML = "";
+        var email = document.getElementById("email");
+        email.innerHTML = "";
       }
     </script>
   </body>

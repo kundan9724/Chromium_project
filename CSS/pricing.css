@@ -133,10 +133,14 @@ header #secondary-menu .btn:hover {
   color: white;
   height: 60px;
   width: 40%;
-
   margin-right: 5%;
   border-radius: 3px;
   margin-left: 30px;
+  opacity: 0.9;
+  transition: 0.2s ease-in-out;
+}
+#started:hover {
+  opacity: 1;
 }
 #started > p {
   text-align: center;
@@ -151,6 +155,11 @@ header #secondary-menu .btn:hover {
   text-align: center;
   border-radius: 3px;
   color: #111324;
+  opacity: 0.9;
+  transition: 0.2s ease-in-out;
+}
+#started + div:hover {
+  opacity: 1;
 }
 /* b {
   font-weight: bolder;
@@ -179,14 +188,14 @@ h2 > button {
   margin: auto;
   height: 9px;
   background: #d3d3d3;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: rgb(120, 86, 255);
   cursor: pointer;
   border-radius: 30px;
@@ -203,7 +212,7 @@ a {
   color: white;
   text-decoration: none;
 }
-/* .slider::-moz-range-thumb {
+.slider::-moz-range-thumb {
   width: 60px;
   height: 60px;
   background: red;
@@ -213,7 +222,8 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
-} */
+  margin-top: 60px;
+}
 /* #pricing {
   display: grid;
   width: 100%;
@@ -228,7 +238,7 @@ a {
   margin-left: 7%;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 140px;
   font-family: sans-serif;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
@@ -264,10 +274,15 @@ a {
   height: 60px;
   color: white;
   font-size: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 10px;
   border: none;
-  border-radius: 3%;
+  border-radius: 3px;
+  opacity: 0.9;
+  transition: 0.2s ease-in-out;
+}
+.signup:hover {
+  opacity: 1;
 }
 .new {
   margin-left: 0.2rem;
@@ -295,7 +310,7 @@ sub {
 }
 .tick {
   text-align: left;
-  margin-left: 100px;
+  margin-left: 70px;
 }
 .tick > img {
   height: 10px;
@@ -323,6 +338,7 @@ sub {
   column-gap: 3%;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 80px;
 }
 #textbox {
   display: inline;
@@ -334,6 +350,12 @@ sub {
   font-size: 25px;
   border: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.payper {
+  color: #7856ff;
+}
+.payper:hover {
+  color: #8c6fff;
 }
 #faq > p {
   font-family: "Courier New", Courier, monospace;
@@ -364,25 +386,36 @@ h1 {
   width: 100%;
   background: linear-gradient(to right, #7856ff 0%, #65b9ff 100%);
   text-align: center;
-  height: 400px;
+  height: 550px;
   color: white;
+  box-sizing: border-box;
+  padding: 70px 550px;
 }
 #getup {
-  padding-top: 150px;
+  /* padding-top: 150px; */
 
-  font-size: 1.7em;
+  font-size: 2em;
 }
 #getup + p {
   font-size: 1em;
   margin-top: -20px;
+  line-height: 1.3em;
 }
 #skyblue > button {
   padding: 19px 39px;
   background-color: #ffffff;
   border: 1px solid #ffffff;
   margin-top: 50px;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
 }
-#skyblue > button > a {
+#skyblue > button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+#skyblue > button {
   color: rgb(122, 93, 255);
 }
 #basicamount,
