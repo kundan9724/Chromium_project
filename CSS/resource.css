@@ -92,8 +92,6 @@ body{
   header #secondary-menu .btn:hover{
     background: #6ad6e0;
   }
-
-@media screen and (min-width: 1100px) {
     #head {
         width: 100%;
         height: 430px;
@@ -103,21 +101,30 @@ body{
         width: 100%;
         height: 70px;
         background-color: #7856FF;
-        margin-top: 8%;
+        margin-top: 0;
         display: flex;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 10%;
+        z-index: 100;
     }
     #sub {
         width: 130px;
         height: 45px;
-        border-radius: 5px;
+        border-radius: 3px;
         background-color: #F6F6F7;
         margin-top: 0.5%;
         margin-left: 2%;
         font-weight: bold;
         font-size: 15px;
         border: 0px;
+        transition: 0.2s ease-in-out;
     }
-    #sub:hover {
+    #sub > a {
+      text-decoration: none;
+      color: black;
+    }
+    #sub:hover > a {
         color: #7856FF;
         cursor: pointer;
     }
@@ -126,6 +133,7 @@ body{
         color: #FFFFFF;
         margin-left: 27%;
         font-family: "Graphik Web", Helvetica, sans-serif;
+        font-weight: 570;
     }
     #head > .text > p {
         font-size: 20px;
@@ -165,10 +173,11 @@ body{
         width: 25%;
         height: 45px;
         margin-left: 5%;
-        border-radius: 5px;
+        border-radius: 3px;
         text-align: center;
         font-size: 16px;
         font-style: italic;
+        border: 1px solid rgb(0,0,0,0.4);
     }
     .filter1 > p {
         margin: 20px;
@@ -211,7 +220,7 @@ body{
     }
     .box1 {
         background-color: #FFFFFF;
-        border: 1px solid rgb(0,0,0,0.5);
+        border: 1px solid rgb(0,0,0,0.2);
 
     }
     .box1 > .notes > p {
@@ -221,7 +230,7 @@ body{
         text-align: center;
         align-items: center;
         justify-content: center;
-        font-weight: bold;
+        font-weight: 530;
     }
     .notes {
         width: 100%;
@@ -231,7 +240,7 @@ body{
     }
     .overlay {
         position: absolute;
-        top: 0;
+        top: -10px;
         left: 0;
         width: 100%;
         height: 80%;
@@ -243,44 +252,111 @@ body{
         display: flex;
         flex-direction: column;
         opacity: 0;
-        transition: opacity 0.25s;
+        transition: top ease 0.3s;
         font-size: 25px;
         text-align: center;
     }
     .overlay:hover {
         opacity: 10;
-    }
-    .overlay > *{
-        transform: translateY(0);
-    }
-    .overlay:hover > * {
-        transform: translateY(20px);
-        transition: transform 1.25s;
+        transition: all 0.4s;
+        top: -28px;
     }
     .box2 {
         background-color: #7856FF;
+        border: 1px solid rgb(0,0,0,0.2);
     }
     .box2 >  p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Graphik Web", Helvetica, sans-serif;
         font-size: 25px;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
     }
     .box3 {
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/wall-street-journal-img-copy-570x675.jpg);
         
         background-size: cover;
+        border: 1px solid rgb(0,0,0,0.2);
+    }
+    #baner {
+        width: 60%;
+        height: 62px;
+        margin-top: 20px;
+        margin-left: -15px;
+        background-color: #7856FF;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 4px 4px rgb(0,0,0,0.6);
+    }
+    #baner1 {
+        width: 50%;
+        height: 62px;
+        margin-top: 20px;
+        margin-left: -15px;
+        background-color: #7856FF;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 4px 4px rgb(0,0,0,0.6);
+    }
+    #baner2 {
+        width: 80%;
+        height: 62px;
+        margin-top: 20px;
+        margin-left: -15px;
+        background-color: #FFFFFF;
+        color: #7856FF;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 4px 4px rgb(0,0,0,0.6);
+    }
+    #baner3 {
+        width: 60%;
+        height: 62px;
+        margin-top: 20px;
+        margin-left: -15px;
+        background-color: #7856FF;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 4px 4px rgb(0,0,0,0.6);
+    }
+    #baner4 {
+        width: 60%;
+        height: 62px;
+        margin-top: 20px;
+        margin-left: -15px;
+        background-color: black;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 4px 4px rgb(0,0,0,0.6);
     }
     .box3 > p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Graphik Web", Helvetica, sans-serif;
         font-size: 25px;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
     }
     .box4 > div {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Graphik Web", Helvetica, sans-serif;
         font-size: 20px;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
         font-weight: normal;
         width: 80%;
@@ -288,9 +364,9 @@ body{
         margin: auto;
     }
     .box2 > div {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Graphik Web", Helvetica, sans-serif;
         font-size: 20px;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
         font-weight: normal;
         width: 80%;
@@ -300,11 +376,12 @@ body{
     .box4 {
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/dark-with-bubbles-570x675.jpg);
         background-size: cover;
+        border: 1px solid rgb(0,0,0,0.2);
     }
     .box4 > p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Graphik Web", Helvetica, sans-serif;
         font-size: 25px;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
     }
     #mid1 {
@@ -323,47 +400,52 @@ body{
     .box5 {
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2021/03/drag-image_web-570x675.jpg);
         background-size: cover;
+        border: 1px solid rgb(0,0,0,0.2);
     }
     .box5 > p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Graphik Web", Helvetica, sans-serif;
         font-size: 25px;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
     }
     .box6 {
         background-color: #1E2241;
+        border: 1px solid rgb(0,0,0,0.2);
     }
     .box6 > p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Graphik Web", Helvetica, sans-serif;
         font-size: 25px;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
     }
     .box7 {
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/11/onboarding-video-purple-570x675.jpg);
         background-size: cover;
+        border: 1px solid rgb(0,0,0,0.2);
     }
     .box7 > p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
         font-size: 25px;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
     }
     .flex {
         display: flex;
     }
     #template {
-        width: 80%;
+        width: 79%;
         height: 454px;
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/09/template-blog_2000x375-v3-tiny.png);
+        background-size: cover;
         margin-left: 10%;
     }
     #template > p {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
         font-size: 35px;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
-        padding-top: 10%;
+        padding-top: 5%;
+        padding-left: 5%;
     }
     .flex > img {
         width: 65%;
@@ -396,12 +478,13 @@ body{
     }
     #mid3 > h {
         font-size: 25px;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
 
     }
     #get {
         width: 25%;
         height: 43px;
-        border-radius: 5px;
+        border-radius: 3px;
         background-color: #7856FF;
         text-align: center;
         color: white;
@@ -409,6 +492,11 @@ body{
         margin-top: 1.8%;
         margin-bottom: 7%;
         border: 0px;
+        transition: 0.2s ease-in-out;
+    }
+    #get > a {
+      text-decoration: none;
+      color: #FFFFFF;
     }
     #get:hover {
         background-color: #886aff;
@@ -416,22 +504,23 @@ body{
     }
     #mid3 > h1 {
         font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
     }
     #see {
         width: 188px;
         height: 46px;
-        border-radius: 5px;
+        border-radius: 3px;
         border: 1px solid aqua;
         color: aqua;
         margin-top: 2%;
-        background-color: white;
+        background-color: transparent;
+        font-weight: bold;
+        transition: 0.2s ease-in-out;
     }
     #see:hover {
         background-color: aqua;
         color: black;
         cursor: pointer;
-        font-weight: bold;
     }
     #mid5{
         width: 80%;
@@ -441,11 +530,11 @@ body{
         margin-top: 2%;
     }
     #mid5 > .imgbox > img {
-        width: 400px;
+        width: 100%;
         height: 219px;
     }
     #mid5 > .imgbox > div {
-        width: 400px;
+        width: 100%;
         height: 374px;
         background-color: white;
         margin-top: 0px;
@@ -453,31 +542,40 @@ body{
     }
     .imgbox{
         background-color: white;
-        width: 400px;
+        width: 32%;
         height: 600px;
         margin: 1.5%;
+        border: 1px solid rgb(0,0,0,0.2);
+    }
+    .imgbox hr {
+      border: 0px solid rgb(0,0,0,0.2);
+      border-top: 1px solid #96969a61;
+      width: 85%;
     }
     #mid5 > .imgbox > div > p {
         margin-left: 10px;
-        font-size: 18px;
+        font-size: 16px;
         color: #7856FF;
+        font-weight: lighter;
     }
     #mid5 > .imgbox > div > h {
         margin-left: 10px;
         font-size: 16px;
         color: #7856FF;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 800;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-weight: 600;
     }
     #mid4 > h {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
         font-size: 40px;
-        font-weight: 500;
+        font-weight: 570;
     }
     #mid4 > p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
         font-size: 18px;
         font-weight: 200;
+        color: rgb(0,0,0,0.8);
+        margin-left: 20px;
     }
     #mid4 {
         width: 40%;
@@ -488,6 +586,7 @@ body{
     .box8 {
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/05/template-builder-teal-tall-570x675.jpg);
         background-size: cover;
+        border: 1px solid rgb(0,0,0,0.2);
     }
     .box8 > p {
         font-size: 40px;
@@ -540,56 +639,66 @@ body{
         margin-left: 10%;
     }
     .pbox > h {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
         font-size: 35px;
-        font-weight: 400;
+        font-weight: 550;
     }
     .pbox > p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
         font-size: 20px;
         font-weight: 100;
+        color: rgb(0,0,0,0.8);
     }
     .pbox > .sublast {
         width: 125px;
         height: 44px;
-        border-radius: 2px;
+        border-radius: 3px;
         text-align: center;
-        background-color: aqua;
+        background: #51CFDB;
         color: black;
         margin-top: 1.5%;
         margin-left: 1.5%;
         border: 0px;
     }
+    .sublast > a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
     .sublast:hover {
-        background-color: darkturquoise;
+        background-color: #6ad6e0;
         cursor: pointer;
     }
     #end {
         width: 100%;
         text-align: center;
-        margin-top: 72px;
+        margin-top: 0;
         background: linear-gradient(to right, #7856FF 0%, #65B9FF 100%);
         height: 586px;
+        display: grid;
+        justify-content: space-around;
 
     }
     #end > div {
-        width: 40%;
+        width: 65%;
         height: 40%;
         margin: auto;
         padding-top: 150px;
     }
     #end > div > h {
         font-family: 'Graphik Web', Helvetica, sans-serif;
-        font-size: 2.2em;
+        font-size: 2.4em;
         line-height: 1.167em;
-        font-weight: 500;
+        font-weight: bold;
         color: white;
+        /* padding: 0px 100px; */
     }
     #end > div > p {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 1.5em;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-size: 1.15em;
         font-weight: 400;
         color: white;
+        margin: 40px 0px;
     }
     #end >div > #try {
         width: 171px;
@@ -597,16 +706,25 @@ body{
         text-align: center;
         color: #7756FE;
         border: 0px;
-        border-radius: 5px;
+        border-radius: 3px;
         background-color: white;
+        transition: 0.2s ease-in-out;
+    }
+    #try > a {
+      text-decoration: none;
+      color: #7756FE;
+      font-weight: bolder;
+      font-size: 1.2em;
     }
     #end > div > #try:hover {
-        background-color: #7084FF;
+        background-color: transparent;
         transition: 0.2s ease-in-out;
         cursor: pointer;
         border: 1px solid white;
-        color: white;
-        font-weight: bold;
+    }
+    #try:hover > a {
+      color: #FFFFFF;
+      font-weight: bold;
     }
     .box1:hover{
         cursor: pointer;
@@ -632,844 +750,6 @@ body{
     .imgbox:hover{
         cursor: pointer;
     }
-}
-@media screen and (min-width: 400px)
-                and (max-width: 700px){
-    #head {
-        width: 100%;
-        height: 430px;
-        background-color: #1F2342;
-        text-align: center;
-    }
-    #headbottom {
-        width: 100%;
-        height: 70px;
-        background-color: #7856FF;
-        margin-top: 52%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    #sub {
-        width: 130px;
-        height: 38px;
-        border-radius: 5px;
-        background-color: #F6F6F7;
-        margin-top: 1%;
-        margin-left: 35%;
-    }
-    #head > .text > h {
-        font-size: 36px;
-        color: #FFFFFF;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    #head > .text > p {
-        font-size: 20px;
-        color: #FFFF;
-        text-align: center;
-    }
-    #head > .text {
-        width: 100%;
-        height: 124px;
-        padding-top: 10%;
-    }
-    #headbottom > p {
-        font-size: 20px;
-        color: #FFFFFF;
-    }
-    .logo1{
-        height: 40px;
-        width: 40px;
-        background-color: #7856FF;
-        border-radius: 5px;
-    }
-    .logo1 > img {
-        height: 35px;
-        width: 35px;
-    }
-    .filter1 {
-        width: 80%;
-        height: 88px;
-        display: flex;
-        margin-top: 100px;
-        display: none;
-    }
-    .filter1 > input {
-        width: 25%;
-        height: 45px;
-        margin-left: 5%;
-        border-radius: 5px;
-    }
-    .filter1 > p {
-        margin: 20px;
-        color: darkgrey;
-        padding: 0%;
-        margin-top: 1%;
-    }
-    .filter1 > p1 {
-        margin-left: 30%;
-        color: darkgrey;
-        padding: 0%;
-        margin-top: 1%;
-    }
-    #mid {
-        width: 80%;
-        height: 3000px;
-        margin-top: 100px;
-    }
-    .flex {
-        width: 100%;
-        height: 1500px
-    }
-    #mid > .flex > div{
-        width: 380px;
-        height: 450px;
-        border: 1px solid darkgrey;
-        margin-top: 1%;
-    }
-    .box1 > img {
-        width: 100%;
-        height: 50%;
-    }
-    .box1 {
-        background-color: #FFFFFF;
-        border: .5px solid darkgrey;
-    }
-    .box1 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: darkgrey;
-        text-align: center;
-    }
-    .box2 {
-        background-color: #7856FF;
-    }
-    .box2 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    .box3 {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/wall-street-journal-img-copy-570x675.jpg);
-        background-size: cover;
-    }
-    .box3 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    .box4 {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/dark-with-bubbles-570x675.jpg);
-        background-size: cover;
-    }
-    .box4 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    #mid1 {
-        width: 80%;
-        height: 1000px;
-        margin-left: 9%;
-        background-color: white;
-        display: none;
-    }
-    #mid1 > .flex > div{
-        width: 35%;
-        height: 90%;
-        border: 1px solid darkgrey;
-        margin-top: 1%;
-        margin-left: 1.5%;
-    }
-    .box5 {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2021/03/drag-image_web-570x675.jpg);
-        background-size: cover;
-    }
-    .box5 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    .box6 {
-        background-color: #1E2241;
-    }
-    .box6 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    .box7 {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/11/onboarding-video-purple-570x675.jpg);
-        background-size: cover;
-    }
-    .box7 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    .flex {
-        display: flex;
-        flex-direction: column;
-    }
-    #template {
-        width: 80%;
-        height: 454px;
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/09/template-blog_2000x375-v3-tiny.png);
-        margin-left: 10%;
-        display: none;
-    }
-    #template > p {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 35px;
-        color: white;
-        text-align: center;
-        padding-top: 10%;
-    }
-    .flex > img {
-        width: 65%;
-        height: 100%;
-    }
-    .flex > .text2 {
-        width: 35%;
-        height: 100%;
-        background-color: #FFFFFF;
-        text-align: center;
-        font-size: 25px;
-        color: darkgrey;
-    }
-    #mid2 {
-        width: 80%;
-        height: 1500px;
-        background-color: white;
-        display: none;
-    }
-    #mid2 > .flex > div{
-        width: 380px;
-        height: 450px;
-        border: 1px solid darkgrey;
-        margin-top: 1%;
-        margin-left: 1.5%;
-    }
-    #mid3 {
-        text-align: center;
-        margin-top: 5%;
-    }
-    #mid3 > h {
-        font-size: 25px;
-
-    }
-    #get {
-        width: 25%;
-        height: 43px;
-        border-radius: 5px;
-        background-color: #7856FF;
-        text-align: center;
-        color: white;
-        font-size: 15px;
-        margin-top: 1.8%;
-        margin-bottom: 7%;
-    }
-    #mid3 > h1 {
-        font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    #see {
-        width: 188px;
-        height: 46px;
-        border-radius: 5px;
-        border: 1px solid aqua;
-        color: aqua;
-        margin-top: 2%;
-        background-color: white;
-    }
-    #mid5{
-        width: 80%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin-top: 2%;
-    }
-    #mid5 > .imgbox > img {
-        width: 400px;
-        height: 219px;
-    }
-    #mid5 > .imgbox > div {
-        width: 400px;
-        height: 374px;
-        background-color: white;
-        margin-top: 0px;
-        padding-top: 0px;
-    }
-    .imgbox{
-        background-color: white;
-        width: 400px;
-        height: 600px;
-        margin: 1.5%;
-    }
-    #mid5 > .imgbox > div > p {
-        margin-left: 10px;
-        font-size: 18px;
-        color: #7856FF;
-    }
-    #mid5 > .imgbox > div > h {
-        margin-left: 10px;
-        font-size: 16px;
-        color: #7856FF;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 800;
-    }
-    #mid4 > h {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 40px;
-        font-weight: 500;
-    }
-    #mid4 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        font-weight: 200;
-    }
-    #mid4 {
-        width: 40%;
-        height: auto;
-        margin-left: 37%;
-        margin-top: 15%;
-    }
-    .box8 {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/05/template-builder-teal-tall-570x675.jpg);
-        background-size: cover;
-    }
-    .box8 > p {
-        font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        font-weight: 600;
-        text-align: center;
-        padding-top: 30px;
-    }
-    .box9 {
-        border: 1px solid white;
-    }
-    #mid6 {
-        width: 80%;
-        height: 3000px;
-        background-color: #F6F6F7;
-    }
-    #mid6 > .flex1 > div{
-        width: 380px;
-        height: 450px;
-        margin-top: 1%;
-        margin-left: 1.5%;
-    }
-    .flex1 {
-        width: 100%;
-        height: 1500px;
-    }
-    .flex1 {
-        display: flex;
-        flex-direction: column;
-    }
-    #last {
-        width: 80%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin-left: 15%;
-        margin-top: 500px;
-        display: none;
-    }
-    #last > .img {
-        height: 340px;
-        width: 335px;
-    }
-    .img > img {
-        height: 100%;
-        width: 100%;
-    }
-    .pbox {
-        height: 340px;
-        width: 50%;
-        margin-left: 10%;
-    }
-    .pbox > h {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 35px;
-        font-weight: 400;
-    }
-    .pbox > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        font-weight: 100;
-    }
-    .pbox > .sublast {
-        width: 125px;
-        height: 44px;
-        border-radius: 2px;
-        text-align: center;
-        background-color: aqua;
-        color: black;
-        margin-top: 1.5%;
-        margin-left: 1.5%;
-    }
-    #end {
-        width: 100%;
-        height: 581px;
-        margin-top: 1000px;
-        background: #7db9e8;
-        background: -moz-linear-gradient(top,  #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
-        background: -webkit-linear-gradient(top,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%);
-        background: linear-gradient(to bottom,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 );
-        ;
-        text-align: center;
-        padding-top: 20%;
-    }
-    #end > h {
-        font-size: 35px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        color: white;
-    }
-    #end > p {
-        font-size: 20px;
-        color: white;;
-    }
-    #end > #free {
-        height: 70px;
-        width: 173px;
-        background-color: white;
-        color: #7856FF;
-        text-align: center;
-        border-radius: 5px;
-        font-size: 15px;
-        font-weight: 400;
-    }
-}
-@media screen and (min-width: 700px)
-                and (max-width:1100px) {
-    #head {
-        width: 100%;
-        height: 430px;
-        background-color: #1F2342;
-        text-align: center;
-    }
-    #headbottom {
-        width: 100%;
-        height: 70px;
-        background-color: #7856FF;
-        margin-top: 28%;
-        display: flex;
-    }
-    #sub {
-        width: 130px;
-        height: 38px;
-        border-radius: 5px;
-        background-color: #F6F6F7;
-        margin-left: 5%;
-        margin-top: 1%;
-    }
-    #head > .text > h {
-        font-size: 46px;
-        color: #FFFFFF;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    #head > .text > p {
-        font-size: 20px;
-        color: #FFFF;
-        text-align: center;
-    }
-    #head > .text {
-        width: 100%;
-        height: 124px;
-        padding-top: 10%;
-    }
-    #headbottom > p {
-        font-size: 20px;
-        color: #FFFFFF;
-        margin-left: 10%;
-    }
-    .logo1{
-        height: 40px;
-        width: 40px;
-        background-color: #7856FF;
-        border-radius: 5px;
-    }
-    .logo1 > img {
-        height: 35px;
-        width: 35px;
-    }
-    .filter1 {
-        width: 80%;
-        height: 88px;
-        display: flex;
-        margin-top: 100px;
-        margin-left: 10%;
-    }
-    .filter1 > input {
-        width: 25%;
-        height: 45px;
-        border-radius: 5px;
-    }
-    .filter1 > p {
-        margin: 20px;
-        color: darkgrey;
-        padding: 0%;
-        margin-top: 1%;
-    }
-    .filter1 > p1 {
-        color: darkgrey;
-        padding: 0%;
-        margin-top: 1%;
-    }
-    #mid {
-        width: 80%;
-        height: 1000px;
-        margin-left: 9%;
-    }
-    .flex {
-        width: 100%;
-        height: 50%;
-    }
-    #mid > .flex > div{
-        width: 35%;
-        height: 90%;
-        border: 1px solid darkgrey;
-        margin-top: 1%;
-        margin-left: 1.5%;
-    }
-    .box1 > img {
-        width: 100%;
-        height: 50%;
-    }
-    .box1 {
-        background-color: #FFFFFF;
-        border: .5px solid darkgrey;
-        flex-grow: 2;
-    }
-    .box1 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: darkgrey;
-        text-align: center;
-    }
-    .box2 {
-        background-color: #7856FF;
-        display: none;
-    }
-    .box2 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    .box3 {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/wall-street-journal-img-copy-570x675.jpg);
-        background-size: cover;
-        display: none;
-    }
-    .box3 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    .box4 {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/dark-with-bubbles-570x675.jpg);
-        background-size: cover;
-    }
-    .box4 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    #mid1 {
-        width: 80%;
-        height: 1000px;
-        margin-left: 9%;
-        background-color: white;
-        display: none;
-    }
-    #mid1 > .flex > div{
-        width: 35%;
-        height: 90%;
-        border: 1px solid darkgrey;
-        margin-top: 1%;
-        margin-left: 1.5%;
-    }
-    .box5 {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2021/03/drag-image_web-570x675.jpg);
-        background-size: cover;
-    }
-    .box5 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    .box6 {
-        background-color: #1E2241;
-    }
-    .box6 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    .box7 {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/11/onboarding-video-purple-570x675.jpg);
-        background-size: cover;
-    }
-    .box7 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-    .flex {
-        display: flex;
-    }
-    #template {
-        width: 80%;
-        height: 454px;
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/09/template-blog_2000x375-v3-tiny.png);
-        margin-left: 10%;
-    }
-    #template > p {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 35px;
-        color: white;
-        text-align: center;
-        padding-top: 10%;
-    }
-    .flex > img {
-        width: 65%;
-        height: 100%;
-    }
-    .flex > .text2 {
-        width: 35%;
-        height: 100%;
-        background-color: #FFFFFF;
-        text-align: center;
-        font-size: 25px;
-        color: darkgrey;
-    }
-    #mid2 {
-        width: 80%;
-        height: 1000px;
-        margin-left: 9%;
-        background-color: white;
-        display: none;
-    }
-    #mid2 > .flex > div{
-        width: 35%;
-        height: 90%;
-        border: 1px solid darkgrey;
-        margin-top: 1%;
-        margin-left: 1.5%;
-    }
-    #mid3 {
-        text-align: center;
-        margin-top: 5%;
-    }
-    #mid3 > h {
-        font-size: 25px;
-
-    }
-    #get {
-        width: 25%;
-        height: 43px;
-        border-radius: 5px;
-        background-color: #7856FF;
-        text-align: center;
-        color: white;
-        font-size: 15px;
-        margin-top: 1.8%;
-        margin-bottom: 7%;
-    }
-    #mid3 > h1 {
-        font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    #see {
-        width: 188px;
-        height: 46px;
-        border-radius: 5px;
-        border: 1px solid aqua;
-        color: aqua;
-        margin-top: 2%;
-        background-color: white;
-    }
-    #mid5{
-        width: 80%;
-        height: auto;
-        display: flex;
-        margin-top: 2%;
-    }
-    #mid5 > .imgbox > img {
-        width: 380px;
-        height: 219px;
-    }
-    #mid5 > .imgbox > div {
-        width: 380px;
-        height: 374px;
-        background-color: white;
-        margin-top: 0px;
-        padding-top: 0px;
-    }
-    .imgbox{
-        background-color: white;
-        width: 380px;
-        height: 600px;
-    }
-    .imgbox1 {
-        display: none;
-    }
-    #mid5 > .imgbox > div > p {
-        margin-left: 10px;
-        font-size: 18px;
-        color: #7856FF;
-    }
-    #mid5 > .imgbox > div > h {
-        margin-left: 10px;
-        font-size: 16px;
-        color: #7856FF;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 800;
-    }
-    #mid4 > h {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 40px;
-        font-weight: 500;
-    }
-    #mid4 > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        font-weight: 200;
-    }
-    #mid4 {
-        width: 40%;
-        height: auto;
-        margin-left: 37%;
-        margin-top: 15%;
-    }
-    .box8 {
-        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/05/template-builder-teal-tall-570x675.jpg);
-        background-size: cover;
-    }
-    .box8 > p {
-        font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        font-weight: 600;
-        text-align: center;
-        padding-top: 30px;
-    }
-    .box9 {
-        border: 1px solid white;
-    }
-    #mid6 {
-        width: 80%;
-        height: 1600px;
-        margin-left: 9%;
-        background-color: #F6F6F7;
-    }
-    .boxx {
-        display: none;
-    }
-    #mid6 > .flex1 > div{
-        width: 35%;
-        height: 90%;
-        margin-top: 1%;
-        margin-left: 1.5%;
-        flex-grow: 1.5;
-    }
-    .flex1 {
-        width: 100%;
-        height: 33%;
-    }
-    .flex1 {
-        display: flex;
-    }
-    #last {
-        width: 80%;
-        height: auto;
-        display: flex;
-        margin-left: 15%;
-        margin-top: 10%;
-    }
-    #last > .img {
-        height: 340px;
-        width: 335px;
-    }
-    .img > img {
-        height: 100%;
-        width: 100%;
-    }
-    .pbox {
-        height: 340px;
-        width: 50%;
-        margin-left: 10%;
-    }
-    .pbox > h {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 35px;
-        font-weight: 400;
-    }
-    .pbox > p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        font-weight: 100;
-    }
-    .pbox > .sublast {
-        width: 125px;
-        height: 44px;
-        border-radius: 2px;
-        text-align: center;
-        background-color: aqua;
-        color: black;
-        margin-top: 1.5%;
-        margin-left: 1.5%;
-    }
-    #end {
-        width: 100%;
-        height: 581px;
-        margin-top: 10%;
-        background: #7db9e8;
-        background: -moz-linear-gradient(top,  #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
-        background: -webkit-linear-gradient(top,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%);
-        background: linear-gradient(to bottom,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 );
-        ;
-        text-align: center;
-        padding-top: 20%;
-    }
-    #end > h {
-        font-size: 35px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        color: white;
-    }
-    #end > p {
-        font-size: 20px;
-        color: white;;
-    }
-    #end > #free {
-        height: 70px;
-        width: 173px;
-        background-color: white;
-        color: #7856FF;
-        text-align: center;
-        border-radius: 5px;
-        font-size: 15px;
-        font-weight: 400;
-    }
-}
 
 /* Footer Section */
 footer{
