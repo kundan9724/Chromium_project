@@ -254,7 +254,7 @@ h2 {
   font-family: sans-serif;
   position: -webkit-sticky;
   position: sticky;
-  top: 10.5%;
+  top: 80px;
   background: white;
   max-width: 100%;
   padding: 15px 4% 0;
@@ -957,7 +957,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 10px;
   column-gap: 10px;
-  margin-left: 15%;
+  /* margin-left: 15%; */
 }
 #entertainment {
   width: 44%;
@@ -1170,7 +1170,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 10px;
   column-gap: 10px;
-  margin-left: 15%;
+  /* margin-left: 15%; */
 }
 #travel {
   width: 60%;
