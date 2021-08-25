@@ -261,6 +261,7 @@ header #nav-menu #secondary .btn:hover {
   margin-left: 30px;
   opacity: 1;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 #started:hover {
   opacity: 0.9;
@@ -271,6 +272,7 @@ header #nav-menu #secondary .btn:hover {
   margin-top: 22px;
 }
 #started + div {
+  cursor: pointer;
   background: rgb(81, 207, 219);
   height: 60px;
   /* font-size: 1.6em; */
@@ -392,6 +394,7 @@ a {
   font-size: 60px;
 }
 .signup {
+  cursor: pointer;
   background-color: rgb(120, 86, 255);
   width: 230px;
   height: 60px;
@@ -529,6 +532,7 @@ h1 {
   line-height: 1.3em;
 }
 #skyblue > button {
+  cursor: pointer;
   padding: 19px 39px;
   background-color: #ffffff;
   border: 1px solid #ffffff;

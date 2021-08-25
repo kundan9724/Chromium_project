@@ -223,23 +223,25 @@ header{
   
   
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
     #top {
-        width: 60%;
+        width: 44%;
+        margin: auto;
         height: auto;
         background-color: #FFFFFF;
         text-align: center;
-        margin-left: 18.5%;
+        /* margin-left: 18.5%; */
         margin-top: 2.5%;
     }
     #top > h {
         font-family: 'Graphik Web', Helvetica, sans-serif;
-        font-size: 4.4em;
+        font-size: 3.6em;
         line-height: 1.167em;
-        font-weight: 500;
+        font-weight: 600;
+        color: #111324;
     }
     #top > p {
-        font-size: 1.8em;
+        font-size: 1.1em;
         line-height: 1.5em;
         color: #111324;
     }
@@ -269,8 +271,10 @@ header{
         height: auto;
         display: flex;
         margin-left: 10%;
-        margin-top: 10%;
+        margin-top: 5%;
+        padding-top: 4%;
         background-color: #F6F6F7;
+        justify-content: center;
     }
     #filter > .a1 {
         font-size: 1.0em;
@@ -305,7 +309,7 @@ header{
         height: 3000px;
         display: grid;
         margin-left: 10%;
-        margin-top: 5%;
+        /* margin-top: 5%; */
         gap: 1%;
         background-color: #F6F6F7;
         grid-template-areas: "a b c d"
@@ -827,7 +831,7 @@ header{
     }
 }
 @media screen and (min-width: 800px)
-                and (max-width: 1200px) {
+                and (max-width: 1100px) {
     #top {
         width: 60%;
         height: auto;

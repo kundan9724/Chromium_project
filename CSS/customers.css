@@ -199,6 +199,7 @@ a {
   opacity: 0.9;
 }
 #heading > button {
+  cursor: pointer;
   text-align: center;
   width: 200px;
   height: 60px;
@@ -1398,6 +1399,7 @@ a {
   font-weight: 400;
 }
 #started > button {
+  cursor: pointer;
   width: 35%;
   height: 40px;
   background-color: rgb(120, 86, 255);
@@ -1407,11 +1409,11 @@ a {
   margin-bottom: 30px;
   font-size: 16px;
   border-radius: 3px;
-  opacity: 0.9;
+  opacity: 1;
   transition: 0.2s ease-in-out;
 }
 #started > button:hover {
-  opacity: 1;
+  opacity: .8;
 }
 /* slider section */
 .sliders {
@@ -1533,6 +1535,7 @@ a {
 }
 
 #skyblue > button {
+  cursor: pointer;
   padding: 19px 39px;
   /* background-color: #ffffff; */
   /* border: 1px solid #ffffff; */
