@@ -365,6 +365,25 @@ header #nav-menu #secondary .btn:hover{
         border: 1px solid rgb(0,0,0,0.2);
 
     }
+    .box1 > .svg {
+      height: 40px;
+      width: 60px;
+      border-radius: 50%;
+      border: 1px solid rgb(0,0,0,0.8);
+      background-color: white;
+      justify-content: center;
+      padding-top: 1%;
+      margin-top: -3%;
+      position: absolute;
+      margin-left: 10%;
+    }
+    .svg > img {
+      width: 70%;
+      height: 70%;
+      margin-top: 0px;
+      margin-left: 8px;
+
+    }
     .box1 > .notes > p {
         font-family: "Graphik Web", Helvetica, sans-serif;
         font-size: 25px;
@@ -406,12 +425,13 @@ header #nav-menu #secondary .btn:hover{
     .box2 {
         background-color: #7856FF;
         border: 1px solid rgb(0,0,0,0.2);
+        padding-right: 1.5%;
     }
     .box2 >  p {
         font-family: "Graphik Web", Helvetica, sans-serif;
-        font-size: 25px;
+        font-size: 2em;
         color: #FFFFFF;
-        text-align: center;
+        margin-left: 4%;
     }
     .box3 {
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/wall-street-journal-img-copy-570x675.jpg);
@@ -509,7 +529,6 @@ header #nav-menu #secondary .btn:hover{
         font-family: "Graphik Web", Helvetica, sans-serif;
         font-size: 20px;
         color: #FFFFFF;
-        text-align: center;
         font-weight: normal;
         width: 80%;
         height: 80%;
