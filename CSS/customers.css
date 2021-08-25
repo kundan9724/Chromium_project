@@ -279,6 +279,9 @@ a {
   column-gap: 10px;
   margin-left: 15%;
 }
+#nonprofitimages > div {
+  height: 267px;
+}
 #parkrun {
   background-color: rgba(93, 93, 102, 0.85);
   /* grid-area: parkrun; */
