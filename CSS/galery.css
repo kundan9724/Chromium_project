@@ -273,27 +273,28 @@ header{
         background-color: #F6F6F7;
     }
     #filter > .a1 {
-        font-size: 1.2em;
+        font-size: 1.0em;
         color: #111324;
         font-weight: 600;
         margin: 20px;
         margin-top: 28px;
+        margin-left: 10%;
     }
     #filter > .b1 {
         font-size: 1.0em;
         color: white;
         background-color: #7756FE;
         font-weight: 600;
-        border-radius: 20px;
+        border-radius: 25px;
         padding-top: 15px;
         text-align: center;
-        width: 113px;
-        height: 36px;
+        width: 116px;
+        height: 30px;
         margin: 20px;
         cursor: pointer;
     }
     #filter > .c1 {
-        font-size: 1.2em;
+        font-size: 1.0em;
         color: #7756FE;
         font-weight: 600;
         margin: 22px;
@@ -467,21 +468,27 @@ header{
     }
     .flex {
         width: 80%;
-        margin-left: 7%;
-        margin-top: 5%;
+        margin-left: 8%;
+        margin-top: 1%;
         display: flex;
     }
     .flex > div {
         width: 30%;
-        margin: 3%;
+        margin: 2%;
     }
     .flex > div > h2 {
         font-family: "Graphik Web", Helvetica, sans-serif;
-        font-weight: bold;
+        font-size: 1.2em;
+        font-weight: 550;
     }
     #last > h1 {
         text-align: center;
         margin-top: 5%;
+        font-size: 2.5em;
+    }
+    #last > .flex > div > p {
+        font-size: .95em;
+        color: rgba(0, 0, 0, 0.7);
     }
     #end {
         width: 100%;
