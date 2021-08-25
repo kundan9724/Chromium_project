@@ -9,107 +9,118 @@ body{
 
 /* Header Section */
 header{
-    /* width: 100%; */
-    height: 67.5px;
-    top: 0%;
-    z-index: 100;
-    color: #8e959c;
+    /* background-color: #111324; */
+    width: 100%;
+    height: 72px;
+    /* position: sticky; */
+    /* top: 0%; */
+    /* z-index: 100; */
+    display: grid;
+    justify-content: space-around;
 }
 
 /* Navigation Bar */
 #nav-bar{
     /* border: 2px solid red; */
     height: 100%;
-    width: 53.5%;
-    margin: 0px auto;
-    margin-left: 451px;
+    /* width: 68.5%; */
+    width: 1000px;
+    /* position: relative;
+    left: 15.75%; */
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 /* Logo inside the Navigation Bar */
 .cmlogo{
-    margin-top: 25px;
-    margin-left: 1px;
-    margin-right: 23px;
-    float: left;
+    /* width: 100%; */
     /* border: 2px solid red; */
+    transition: 0.2s ease-in-out;
 }
 
 /* Navigation Menu */
 #nav-menu{
+    /* float: right; */
     height: 100%;
-    width: 45%;
+    font-weight: lighter;
+    width: 82.5%;
     display: flex;
-    float: left;
+    justify-content: space-between;
+    box-sizing: border-box;
     /* border: 2px solid red; */
 }
 
-/* Secondary Menu */
-#secondary-menu{
-    height: 100%;
-    width: 25%;
+#primary{
+    /* border: 2px solid red; */
+    text-transform: uppercase;
     display: flex;
+}
+
+#secondary{
+
     float: right;
+    width: 28.9%;
+    display: flex;
+    /* justify-content: space-between; */
     /* border: 2px solid red; */
 }
 
-#secondary-menu > .btn{
-    font-weight: bold;
-    letter-spacing: 0;
-    border-radius: 3px;
-    margin: 16px 0px 0px 10px;
-    padding: 12px 21px;
-    height: 36px;
-
-    color: #8e959cb2;
-    border: 1px solid #8e959cb2;
-}
-
-/* Anchor Tag properties */
-#nav-bar > a{
-    width: 18%;
-}
-
-#nav-bar #nav-menu a,#secondary-menu a{
-    letter-spacing: .05px;
-    font-size: 11px;
+#nav-menu a:not(.btn){
+    /* border: 2px solid red; */
+    letter-spacing: .05em;
+    font-size: 0.66em;
     text-decoration: none;
-    color: #8e959c;
-    /* border: 2px solid red; */
+    color: black;
+    opacity: .5;
     text-align: center;
-    padding: 27px 12px;
-    box-sizing: border-box;    
+    padding: 7.5% 3.1%;
+    transition: 0.2s ease-in-out;
+}
+
+#nav-menu #secondary a:not(.btn){
+    padding: 11.5% 4.905%;
+    /* padding-right: 2%; */
+    /* padding-bottom: 0%; */
+    opacity: .35;
+    font-size: 0.71em;
+    letter-spacing: .03em;
+}
+
+header #nav-menu #secondary .btn{
+    height: 14.5%;
+    width: 58px;
+    /* float: right; */
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4.8% 7.2%;
+    padding-right: 5%;
+    margin: 6.9% 0% 0% 5%;
+    /* margin-bottom: 0%; */
+    border-radius: 4px;
+    background: transparent;
+    color: black;
+    opacity: .35;
     transition: 0.2s;
-}
-
-#secondary-menu .btn{
-    transition: 0s;
-}
-
-#secondary-menu a{
-    letter-spacing: .5px;
-    color: #8e959cb2;
+    border: 1px solid rgba(0,0,0,.7);
 }
 
 /* Hover Effects */
-#nav-bar #nav-menu a:hover,#secondary-menu a:not(.btn):hover{
-    color: black;
+#nav-bar #nav-menu a:not(.btn):hover{
+    opacity: 1;
 }
 
-#secondary-menu a:not(.btn):hover{
-    color: #7d838a;
-}
-
-header #secondary-menu .btn:hover{
-    background: #78b324;
-    color: white;
+header #nav-menu #secondary .btn:hover{
+    background: #6ad6e0;
 }
 
 
 
 /* Form Section*/
 
-body > p{
+.container > p{
     
     color: #18527c;
     font-size: 40px;
@@ -119,7 +130,12 @@ body > p{
     width: 112px;
 
     margin: 33px auto;
-    margin-top: 134px;
+    margin-top: 130px;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
 }
 
 form{
@@ -131,8 +147,9 @@ form{
     margin: auto;
     
     box-sizing: border-box;
-    padding: 32.5px 30.5px;
+    padding: 32.3px 30.5px;
     padding-right: 35px;
+    transition: 0.2s ease-in-out;
 }
 
 form label{
@@ -157,6 +174,7 @@ form input{
     margin-bottom: 19px;
     padding-left: 10px;
     box-sizing: border-box;
+    transition: 0.15s ease-in-out;
 }
 
 form input:focus{
@@ -209,7 +227,7 @@ form a:focus,form a:hover {
 .signup{
     position: relative;
     top: 45px;
-    left: 737px;
+    /* left: 38.75%; */
     border-radius: 3px;
     text-decoration: none;
     display: block;
