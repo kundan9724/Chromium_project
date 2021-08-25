@@ -317,10 +317,10 @@ header{
                             ". y z .";
     }
     #grid > div {
-        width: 256px;
+        width: 87%;
         height: 390px;
         position: relative;
-        margin-left: 25px;
+        margin-left: 7%;
     }
     #grid > .a {
         grid-area: a;
@@ -623,7 +623,7 @@ header{
         height: auto;
         display: grid;
         margin-top: 5%;
-        gap: 1%;
+        margin-left: 2%;
         background-color: #F6F6F7;
         grid-template-areas: "a b" 
                                 "c d"
@@ -640,8 +640,9 @@ header{
                                 "y z";
     }
     #grid > div {
-        width: 256px;
+        width: 87%;
         height: 390px;
+        margin-left: 1%;
     }
     #grid > .a {
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/jaybird_v1-269x389.jpg);
@@ -894,8 +895,7 @@ header{
         width: 80%;
         height: auto;
         display: grid;
-        margin-top: 100px;
-        gap: 1%;
+        margin: auto;
         background-color: #F6F6F7;
         grid-template-areas: "a b c" 
                                 "d e f"
@@ -908,8 +908,9 @@ header{
                                 ". z y";
     }
     #grid > div {
-        width: 256px;
+        width: 87%;
         height: 390px;
+        margin: 1.5%;
     }
     #grid > .a {
         background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/02/jaybird_v1-269x389.jpg);
