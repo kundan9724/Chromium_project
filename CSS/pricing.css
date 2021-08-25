@@ -6,7 +6,7 @@ body {
 }
 
 /* Header Section */
-header{
+header {
   background-color: #111324;
   width: 100%;
   height: 80px;
@@ -18,7 +18,7 @@ header{
 }
 
 /* Navigation Bar */
-#nav-bar{
+#nav-bar {
   /* border: 2px solid red; */
   height: 100%;
   /* width: 68.5%; */
@@ -31,7 +31,7 @@ header{
 }
 
 /* Logo inside the Navigation Bar */
-.cmlogo{
+.cmlogo {
   padding-left: 1%;
   padding-top: 2%;
   /* width: 100%; */
@@ -40,7 +40,7 @@ header{
 }
 
 /* Navigation Menu */
-#nav-menu{
+#nav-menu {
   float: right;
   font-weight: lighter;
   width: 74.5%;
@@ -49,13 +49,12 @@ header{
   /* border: 2px solid red; */
 }
 
-#primary{
+#primary {
   /* border: 2px solid red; */
   display: flex;
 }
 
-#secondary{
-
+#secondary {
   float: right;
   width: 29%;
   display: flex;
@@ -63,28 +62,28 @@ header{
   /* border: 2px solid red; */
 }
 
-#nav-menu a:not(.btn){
+#nav-menu a:not(.btn) {
   /* border: 2px solid red; */
-  letter-spacing: .14em;
+  letter-spacing: 0.14em;
   font-size: 0.88em;
   text-decoration: none;
   color: white;
   text-align: center;
   padding: 8% 3%;
   padding-bottom: 6.8%;
-  box-sizing: border-box;    
+  box-sizing: border-box;
   transition: 0.2s ease-in-out;
 }
 
-#nav-menu #secondary a:not(.btn){
+#nav-menu #secondary a:not(.btn) {
   padding: 11.8% 2%;
   padding-right: 2%;
   padding-bottom: 0%;
   font-size: 0.95em;
-  letter-spacing: .12em;
+  letter-spacing: 0.12em;
 }
 
-header #nav-menu #secondary .btn{
+header #nav-menu #secondary .btn {
   height: 15%;
   float: right;
   font-size: 0.92em;
@@ -94,119 +93,116 @@ header #nav-menu #secondary .btn{
   margin: 7% 0%;
   margin-bottom: 0%;
   border-radius: 3px;
-  background: #51CFDB;
+  background: #51cfdb;
   color: #111324;
   transition: 0.2s;
 }
 
 /* Hover Effects */
-#nav-bar #nav-menu a:not(.btn):hover{
-  color: #51CFDB;
+#nav-bar #nav-menu a:not(.btn):hover {
+  color: #51cfdb;
 }
 
-header #nav-menu #secondary .btn:hover{
+header #nav-menu #secondary .btn:hover {
   background: #6ad6e0;
 }
 
 /* Media query for header */
 @media only screen and (max-width: 1400px) {
-  header #nav-menu a:not(.btn){
-      font-size: .75em;
-      padding-right: 1%;
+  header #nav-menu a:not(.btn) {
+    font-size: 0.75em;
+    padding-right: 1%;
   }
-  
-  header #nav-menu #secondary a:not(.btn){
-      font-size: .75em;
-      padding-right: 1%;
+
+  header #nav-menu #secondary a:not(.btn) {
+    font-size: 0.75em;
+    padding-right: 1%;
   }
-  header #nav-menu{
-      width: 70%;
+  header #nav-menu {
+    width: 70%;
   }
 }
 
 @media only screen and (max-width: 1360px) {
-  header #nav-menu #secondary .btn{
-      padding: 4.7% 5%;
-      font-size: 0.8em;
+  header #nav-menu #secondary .btn {
+    padding: 4.7% 5%;
+    font-size: 0.8em;
   }
-  #nav-bar{
-      width: 1200px;
+  #nav-bar {
+    width: 1200px;
   }
 }
 
 @media only screen and (max-width: 1300px) {
-  header #nav-bar .cmlogo svg{
-      padding: 0%;
-      width: 75%;
+  header #nav-bar .cmlogo svg {
+    padding: 0%;
+    width: 75%;
   }
 }
 
 @media only screen and (max-width: 1250px) {
-  header #nav-bar{
-      width: 1100px;
+  header #nav-bar {
+    width: 1100px;
   }
 }
 
 @media only screen and (max-width: 1111px) {
-  
-  header #nav-bar .cmlogo svg g path:nth-child(1){
-      display: none;
+  header #nav-bar .cmlogo svg g path:nth-child(1) {
+    display: none;
   }
-  header #nav-bar{
-      width: 1000px;
-      justify-content: space-evenly;
+  header #nav-bar {
+    width: 1000px;
+    justify-content: space-evenly;
   }
 }
 
 @media only screen and (max-width: 1023px) {
-  
-  header #nav-bar #secondary a:nth-child(2){
-      display: none;
+  header #nav-bar #secondary a:nth-child(2) {
+    display: none;
   }
-  
-  header #nav-bar #secondary{
-      justify-content: space-evenly;
+
+  header #nav-bar #secondary {
+    justify-content: space-evenly;
   }
 }
 
 @media only screen and (max-width: 950px) {
-  header #nav-bar{
-      width: 900px;
+  header #nav-bar {
+    width: 900px;
   }
-
 }
 
 /* Fancy section */
-.fancy{
+.fancy {
   position: fixed;
   height: 52px;
   width: 52px;
   border-radius: 50px;
   bottom: 2.1%;
   right: 1.05%;
-  background-color: #7856FF;
-  box-shadow: 0px 0px 10px 0px rgb(0,0,0,.3);
+  background-color: #7856ff;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.3);
   transition: 0.2s ease-in-out;
   overflow: hidden;
   z-index: 100;
 }
 
-.fancy a{
+.fancy a {
   transition: 0.3s ease-in-out;
   width: 100%;
   fill: white;
   text-decoration: none;
-  color: #7856FF;
+  color: #7856ff;
 }
 
-.fancy a .icon svg{
+.fancy a .icon svg {
   height: 24px;
   position: relative;
   top: 14px;
   left: 4px;
 }
 
-.fancy a span{
+.fancy a span {
   /* border: 2px solid red; */
   padding-bottom: 14px;
   padding-right: 11px;
@@ -215,13 +211,11 @@ header #nav-menu #secondary .btn:hover{
   left: 52px;
 }
 
-.fancy:hover, .fancy a:hover{
+.fancy:hover,
+.fancy a:hover {
   width: 150px;
   color: white;
 }
-
-
-
 
 #heading {
   width: 80%;
@@ -265,11 +259,11 @@ header #nav-menu #secondary .btn:hover{
   margin-right: 5%;
   border-radius: 3px;
   margin-left: 30px;
-  opacity: 0.9;
+  opacity: 1;
   transition: 0.2s ease-in-out;
 }
 #started:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 #started > p {
   text-align: center;
@@ -284,11 +278,11 @@ header #nav-menu #secondary .btn:hover{
   text-align: center;
   border-radius: 3px;
   color: #111324;
-  opacity: 0.9;
+  opacity: 1;
   transition: 0.2s ease-in-out;
 }
 #started + div:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 /* b {
   font-weight: bolder;
@@ -572,7 +566,7 @@ h1 {
 }
 
 /* Footer Section */
-footer{
+footer {
   height: 595px;
   background-color: #111324;
   color: white;
@@ -582,15 +576,14 @@ footer{
   justify-content: space-around;
 }
 
-.btn-container{
-    
+.btn-container {
   width: 95%;
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
 }
 
-.btn-container a{
+.btn-container a {
   border-radius: 3px;
   text-decoration: none;
   width: 48.5%;
@@ -602,42 +595,42 @@ footer{
   box-sizing: border-box;
   transition-duration: 0.2s;
   color: white;
-  background-color: #7856FF;
+  background-color: #7856ff;
 }
 
-.btn-container a:hover{
+.btn-container a:hover {
   color: white;
   background-color: #886aff;
 }
 
 /* Top Part of footer with links */
 
-footer .cmlogo{
+footer .cmlogo {
   display: inline;
-  padding: .15%;
+  padding: 0.15%;
 }
 
-footer a{
+footer a {
   text-decoration: none;
 }
 
-footer #footer-cont{
+footer #footer-cont {
   /* width: 73.1%; */
   width: 1300px;
 }
 
-footer #footer-cont #top-footer{
+footer #footer-cont #top-footer {
   margin-bottom: 219px;
 }
 
-footer #footer-cont #footer-menu{
+footer #footer-cont #footer-menu {
   padding: 0%;
   margin-top: -2px;
   float: right;
   width: 682px;
 }
 
-footer #footer-cont #footer-menu ul{
+footer #footer-cont #footer-menu ul {
   margin: 0%;
   padding: 0%;
   list-style: none;
@@ -645,94 +638,93 @@ footer #footer-cont #footer-menu ul{
   width: 25%;
 }
 
-footer #footer-cont #footer-menu ul li:nth-child(1){
+footer #footer-cont #footer-menu ul li:nth-child(1) {
   margin: 0px 0px 9px 0px;
 }
 
-footer #footer-cont #footer-menu ul li{
+footer #footer-cont #footer-menu ul li {
   margin: 0px 0px 7px 0px;
 }
 
-footer #footer-cont #footer-menu ul li a{
+footer #footer-cont #footer-menu ul li a {
   color: white;
   font-size: 12px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   transition: 0.2s ease-in-out;
 }
 
-footer #footer-cont #footer-menu ul li a:hover{
+footer #footer-cont #footer-menu ul li a:hover {
   opacity: 0.85;
 }
 
-footer #footer-cont #footer-menu ul .heading{
+footer #footer-cont #footer-menu ul .heading {
   letter-spacing: 0px;
   font-weight: bold;
-  color: #8A8B93;
+  color: #8a8b93;
 }
 
-footer #footer-cont #footer-menu ul .heading:hover{
+footer #footer-cont #footer-menu ul .heading:hover {
   opacity: 1;
 }
 
-
-hr{
+hr {
   border: 0px solid #ffffff;
-  border-top: 1px solid #5D5D66;
+  border-top: 1px solid #5d5d66;
   width: 99.7%;
 }
 
 /* Bottom Part of footer with copyright */
 
-footer #bottom-footer{
+footer #bottom-footer {
   margin-top: 26px;
   margin-left: 2px;
 }
 
-footer #bottom-footer .btn-container{
+footer #bottom-footer .btn-container {
   width: 18.12%;
   float: left;
 }
 
-footer #bottom-footer .btn-container a{
+footer #bottom-footer .btn-container a {
   width: 100%;
 }
 
-footer #bottom-footer .foot-notes{
+footer #bottom-footer .foot-notes {
   margin-top: 9.5px;
   float: right;
   width: 684px;
 }
 
-footer #bottom-footer .foot-notes a{
+footer #bottom-footer .foot-notes a {
   margin-right: 13.5px;
 }
 
-footer #bottom-footer .foot-notes a svg{
+footer #bottom-footer .foot-notes a svg {
   transition: 0.2s ease-in-out;
 }
 
-footer #bottom-footer .foot-notes a svg:hover{
-  opacity: .85;
+footer #bottom-footer .foot-notes a svg:hover {
+  opacity: 0.85;
 }
 
-footer #bottom-footer .foot-notes .foot-line{
+footer #bottom-footer .foot-notes .foot-line {
   float: right;
   width: 498px;
   font-size: 11.5px;
   margin-top: 3px;
   margin-right: 0px;
-  color: #BEBEC2;
-  letter-spacing: .05px;
+  color: #bebec2;
+  letter-spacing: 0.05px;
 }
 
-footer #bottom-footer .foot-notes .foot-line a{
-  color: #BEBEC2;
+footer #bottom-footer .foot-notes .foot-line a {
+  color: #bebec2;
   margin-right: 0px;
   transition: 0.2s ease-in-out;
 }
 
-footer #bottom-footer .foot-notes .foot-line a:hover{
-  opacity: .85;
+footer #bottom-footer .foot-notes .foot-line a:hover {
+  opacity: 0.85;
 }
 
 footer #bottom-footer .foot-notes .foot-line .first-sep {
@@ -741,7 +733,7 @@ footer #bottom-footer .foot-notes .foot-line .first-sep {
   position: relative;
   top: 2px;
   display: inline-block;
-  background-color: #8A8B93;
+  background-color: #8a8b93;
   margin: 0px 5px;
 }
 
@@ -749,7 +741,7 @@ footer #bottom-footer .foot-notes .foot-line .sep {
   margin-left: 10px;
 }
 
-.last-part{
+.last-part {
   width: 75%;
   margin: auto;
   margin-top: 145px;
@@ -757,75 +749,75 @@ footer #bottom-footer .foot-notes .foot-line .sep {
   /* border: 2px solid red; */
 }
 
-.last-part span{
-  color: #BEBEC2;
+.last-part span {
+  color: #bebec2;
   font-size: 11.5px;
-  letter-spacing: .18px;
+  letter-spacing: 0.18px;
 }
 
-.last-part span a{
-  color: #BEBEC2;
+.last-part span a {
+  color: #bebec2;
   transition: 0.2s ease-in-out;
 }
 
-.last-part span a:hover{
+.last-part span a:hover {
   opacity: 0.85;
 }
 
-footer .logos{
+footer .logos {
   /* border: 2px solid red; */
   width: 74.5%;
   margin: auto;
   margin-top: 10px;
 }
 
-footer .logos a{
+footer .logos a {
   margin: 16px;
 }
 
-footer .logos a img{
+footer .logos a img {
   width: 10%;
 }
 
-footer .logos .one{
+footer .logos .one {
   width: 15.2%;
 }
 
-footer .logos .two{
+footer .logos .two {
   width: 14%;
 }
 
-footer .logos .three{
+footer .logos .three {
   width: 5.8%;
 }
 
-footer .logos .four{
+footer .logos .four {
   width: 7.8%;
 }
 
-footer .logos .five{
+footer .logos .five {
   width: 8%;
 }
 
-footer .logos .six{
+footer .logos .six {
   width: 8%;
 }
 
-footer .logos .seven{
+footer .logos .seven {
   width: 6%;
 }
 
-footer .logos .eight{
+footer .logos .eight {
   width: 5%;
 }
 
 /* media Queries */
 
-@media only screen and (max-width: 1630px){
-  footer #bottom-footer .btn-container a{
-      font-size: 12px;
+@media only screen and (max-width: 1630px) {
+  footer #bottom-footer .btn-container a {
+    font-size: 12px;
   }
-  footer{
-      justify-content: space-evenly;
+  footer {
+    justify-content: space-evenly;
   }
 }
