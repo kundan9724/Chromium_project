@@ -229,7 +229,7 @@ header{
         height: auto;
         background-color: #FFFFFF;
         text-align: center;
-        margin-left: 17.5%;
+        margin-left: 18.5%;
         margin-top: 2.5%;
     }
     #top > h {
@@ -320,6 +320,7 @@ header{
         width: 256px;
         height: 390px;
         position: relative;
+        margin-left: 25px;
     }
     #grid > .a {
         grid-area: a;
