@@ -57,7 +57,7 @@ just clone it and start using
 
 👤 **Abhishek**
 
-- Website: https://abhi-aro.herokuapp.com/
+- Website: [abhi-aro.tech](https://abhi-aro.tech/)
 - Twitter: [@Prog_Anon](https://twitter.com/Prog_Anon)
 - Github: [@PA-iscar](https://github.com/PA-iscar)
 - LinkedIn: [@abhi-aro](https://linkedin.com/in/abhi-aro)
