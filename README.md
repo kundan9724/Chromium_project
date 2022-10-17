@@ -31,7 +31,7 @@ In this project we have tried to clone the front end of <strong>Campaign Monitor
 
 # How to run the project 📑
 
-### After cloning the project from https://github.com/PA-iscar/Chromium_project.git
+### After cloning the project from https://github.com/abhi-aro/Chromium_project.git
 
 ## Install using
 
@@ -75,7 +75,7 @@ just clone it and start using
 👤 **Abhishek**
 
 - Website: [Portfolio](https://abhi-aro.tech/)
-- Github: [@PA-iscar](https://github.com/PA-iscar)
+- Github: [@abhi-aro](https://github.com/abhi-aro)
 - LinkedIn: [@abhi-aro](https://linkedin.com/in/abhi-aro)
 
 👤 **Kundan**
