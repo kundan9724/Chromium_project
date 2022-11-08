@@ -17,7 +17,7 @@ In this project we have tried to clone the front end of <strong>Campaign Monitor
 1. [CSS](https://www.w3schools.com/css/)
 1. [JavaScript](https://www.javascript.com/)
 
-### 🏠 [Homepage](https://chromium-project.herokuapp.com/)
+### 🏠 [Homepage](https://chromium-deployed.vercel.app/)
 
 <br/>
 
